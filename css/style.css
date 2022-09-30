@@ -762,6 +762,16 @@ hr {
 .igot-menu .navbar-toggler:focus {
     box-shadow: none;
 }
+
+.igot-display img {
+    min-width: 265px;
+    max-width: 100%;
+    max-height: 168px;
+    min-height: 168px;
+    object-fit: fill;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 /* span.navbar-toggler-icon::before, 
 span.navbar-toggler-icon::after {
     content: '';
