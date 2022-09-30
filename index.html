@@ -63,8 +63,8 @@
             <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
           </form>
           <div class="register d-flex">
-            <div class="logIn mx-2"><a href="https://portal.igot-dev.in/protected/v8/resource" class="btn btn-default">Login</a></div>
-            <div class="signUp"><a href="https://portal.igot-dev.in/public/signup" class="btn btn-primary">Register</a></div>
+            <div class="logIn mx-2"><a id="loginLink" href="/protected/v8/resource" class="btn btn-default">Login</a></div>
+            <div class="signUp"><a id="registerLink" href="/public/signup" class="btn btn-primary">Register</a></div>
           </div>
         </div>
       </div>
@@ -1045,19 +1045,19 @@
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a href="" class="f-link">Learn</a></li>
-                  <li><a href="" class="f-link">Discuss</a></li>
-                  <li><a href="" class="f-link">Network</a></li>
-                  <li><a href="index.html#igotcourses" class="f-link">Courses</a></li>
+                  <li><a id="learnLink" href="/page/learn" class="f-link">Learn</a></li>
+                  <li><a id="discussLink" href="/app/discussion-forum?page=home" class="f-link">Discuss</a></li>
+                  <li><a id="networkLink" href="/app/network-v2" class="f-link">Network</a></li>
+                  <li><a id="coursesLink" href="/page/learn" class="f-link">Courses</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a href="" class="f-link">Career</a></li>
-                  <li><a href="" class="f-link">Competencies</a></li>
-                  <li><a href="" class="f-link">Events</a></li>
+                  <li><a id="careerLink" href="/app/careers/home" class="f-link">Career</a></li>
+                  <li><a id="competenciesLink" href="/app/competencies" class="f-link">Competencies</a></li>
+                  <li><a id="eventsLink" href="/app/event-hub" class="f-link">Events</a></li>
                   <li><a href="https://karmayogibharat.gov.in/" target="_blank" class="f-link">Media</a></li>
                 </ul>
               </div>
@@ -1067,8 +1067,8 @@
                 <ul>
                   <li><a href="https://karmayogibharat.gov.in/programme.php" target="_blank" class="f-link">Mission Karmayogi</a></li>
                   <li><a href="https://frac-dictionary.igotkarmayogi.gov.in/"  class="f-link">Frac Dictionary</a></li>
-                  <li><a href="https://igotkarmayogi.gov.in/public/faq" class="f-link">Frequently asked questions</a></li>
-                  <li><a href="https://igotkarmayogi.gov.in/public/contact" class="f-link">Contact Us</a></li>
+                  <li><a id="faqLink" href="/public/faq" class="f-link">Frequently asked questions</a></li>
+                  <li><a id="contactUsLink" href="/public/contact" class="f-link">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -1126,8 +1126,15 @@
 
       </script>
       <script>
-        
+        var portalURL=""
+
         $(document).ready(async function() {
+          const res = await fetch('./configurations.json')
+          if(res) {
+            const resJson = await res.json()
+            portalURL = resJson.portalURL || ''
+          }
+          await updateLinks()
           await fetchCourses('https://portal.igot-dev.in/api/course/v1/explore')
         })
 
@@ -1136,7 +1143,6 @@
           let content=''
           const response = await fetch(url)
           const {result} = await response.json()
-          console.log('result', result.content)
           if(result && result.content && result.content.length) {
             courses = result.content
           }
@@ -1149,8 +1155,6 @@
             $('.owl-carousel').removeClass("owl-center owl-loaded owl-text-select-on");
           }
           
-          console.log('courousal -- ', document.querySelector('.igot-courseCarousel'))
-
           $(".owl-carousel").html('');
           if(courses.length) {
             for(let i=0; i<courses.length; i++) {
@@ -1219,6 +1223,36 @@
               }
             }
           });
+        }
+
+        async function updateLinks() {
+          const loginLink = document.getElementById('loginLink')
+          const registerLink = document.getElementById('registerLink')
+          const learnLink = document.getElementById('learnLink')
+          const discussLink = document.getElementById('discussLink')
+          const networkLink = document.getElementById('networkLink')
+          const coursesLink = document.getElementById('coursesLink')
+          const careerLink = document.getElementById('careerLink')
+          const competenciesLink = document.getElementById('competenciesLink')
+          const eventsLink = document.getElementById('eventsLink')
+          const faqLink = document.getElementById('faqLink')
+          const contactUsLink = document.getElementById('contactUsLink')
+          appendPortalURLToHref(loginLink)
+          appendPortalURLToHref(registerLink)
+          appendPortalURLToHref(learnLink)
+          appendPortalURLToHref(discussLink)
+          appendPortalURLToHref(networkLink)
+          appendPortalURLToHref(coursesLink)
+          appendPortalURLToHref(careerLink)
+          appendPortalURLToHref(competenciesLink)
+          appendPortalURLToHref(eventsLink)
+          appendPortalURLToHref(faqLink)
+          appendPortalURLToHref(contactUsLink)
+        }
+
+        async function appendPortalURLToHref(element){
+          const oldhref = element.getAttribute("href")
+          element.setAttribute("href", `${portalURL}${oldhref}`);
         }
       </script>
 
