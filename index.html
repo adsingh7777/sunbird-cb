@@ -63,8 +63,8 @@
             <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
           </form>
           <div class="register d-flex">
-            <div class="logIn mx-2"><a href="" class="btn btn-default">Login</a></div>
-            <div class="signUp"><a href="" class="btn btn-primary">Register</a></div>
+            <div class="logIn mx-2"><a href="https://portal.igot-dev.in/protected/v8/resource" class="btn btn-default">Login</a></div>
+            <div class="signUp"><a href="https://portal.igot-dev.in/public/signup" class="btn btn-primary">Register</a></div>
           </div>
         </div>
       </div>
@@ -1126,32 +1126,100 @@
 
       </script>
       <script>
-        $(document).ready(function() {
-          $('.igot-courseCarousel').owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 0,
-            startPosition: 1, // 1, 2, 3 
-            responsiveClass: true,
-            autoplay: true,
-            smartSpeed: 500,
-            autoplayHoverPause: true,
-            center:true,
-            responsive: {
-             0: {
-              items: 1,
-              nav:true,
-              margin: 10,
-            },
+        
+        $(document).ready(async function() {
+          await fetchCourses('https://portal.igot-dev.in/api/course/v1/explore')
+        })
 
-            600: {
-              items: 3,
-              nav:true,
+        async function fetchCourses(url){
+          let courses = []
+          let content=''
+          const response = await fetch(url)
+          const {result} = await response.json()
+          console.log('result', result.content)
+          if(result && result.content && result.content.length) {
+            courses = result.content
+          }
+
+          //resize event was triggering an error, this if statement is to go around it
+          if($('.owl-carousel').hasClass('owl-theme')){ 
+            //these 3 lines kill the owl, and returns the markup to the initial state
+            $('.owl-carousel').trigger('destroy.owl.carousel'); 
+            $('.owl-carousel').find('.owl-stage-outer').children().unwrap();
+            $('.owl-carousel').removeClass("owl-center owl-loaded owl-text-select-on");
+          }
+          
+          console.log('courousal -- ', document.querySelector('.igot-courseCarousel'))
+
+          $(".owl-carousel").html('');
+          if(courses.length) {
+            for(let i=0; i<courses.length; i++) {
+              let c = courses[i]
+
+              // content += "<div class=\"item\">" + courses[i].name + "</div>"
+              content += `<div class="item">
+                            <a href="https://portal.igot-dev.in/public/toc/${c.identifier}/overview">
+                                <div class="igot-display"><img src="${c.posterImage}" alt="${c.name}">
+                                </div>
+                                <div class="igot-courseContent">
+                                    <div class="c-score d-flex align-items-center mb-2">
+                                        <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> ${c.primaryCategory}</div>
+                                        <!-- <div class="c-star me-auto">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <div class="c-share">
+                                    
+                                    <svg class="c-share" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8.49078 4.29287L8.96493 4.26833V3.79354V1.052L15.1933 6.12417L8.96493 11.2117V8.47989V7.95126L8.43712 7.98067C5.19255 8.16143 2.21369 10.1022 0.743144 13.0324L0.736881 13.0449L0.731325 13.0577L0.5 13.591V12.7149C0.5 10.4705 1.37824 8.35633 2.97659 6.75801L2.97659 6.758C4.46981 5.26476 6.41266 4.40044 8.49078 4.29287ZM0.5 14.8474L1.19003 13.2567L0.5 14.8474Z" fill="" stroke=""/>
+                                    </svg>
+                                
+                                    </div> -->
+                                    </div>
+                                    <div class="courseDetails">
+                                        <h2 class="h6 mb-2"> ${c.name} </h2>
+                                        <p> ${c.description}</p>
+                                        <div class="dureation">Learning Hours : <span>${c.duration} mins</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`
             }
           }
-        })
 
-        })
+          $(".igot-courseCarousel").html(content);
+          initilizeCourosel();
+        }
+
+        async function initilizeCourosel() {
+          $('.igot-courseCarousel').owlCarousel({
+              loop: false,
+              rewind: true,
+              nav: true,
+              margin: 0,
+              // startPosition: 1, // 1, 2, 3 
+              responsiveClass: true,
+              autoplay: true,
+              smartSpeed: 500,
+              autoplayHoverPause: true,
+              // center:true,
+              responsive: {
+              0: {
+                items: 1,
+                nav:true,
+                margin: 10,
+              },
+
+              600: {
+                items: 3,
+                nav:true,
+              }
+            }
+          });
+        }
       </script>
 
     </body>
