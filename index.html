@@ -819,7 +819,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="igot-title">
               <h2 class="h2"><span>Take the</span> <span>first step</span> toward learning</h2>
-              <div class="registerLink"><a href="" class="custom-btn">Register Now</a></div>
+              <div class="registerLink"><a id="registerLink1" href="/public/signup" class="custom-btn">Register Now</a></div>
             </div>
           </div>
         </div>
@@ -1228,6 +1228,7 @@
         async function updateLinks() {
           const loginLink = document.getElementById('loginLink')
           const registerLink = document.getElementById('registerLink')
+          const registerLink1 = document.getElementById('registerLink1')
           const learnLink = document.getElementById('learnLink')
           const discussLink = document.getElementById('discussLink')
           const networkLink = document.getElementById('networkLink')
@@ -1239,6 +1240,7 @@
           const contactUsLink = document.getElementById('contactUsLink')
           appendPortalURLToHref(loginLink)
           appendPortalURLToHref(registerLink)
+          appendPortalURLToHref(registerLink1)
           appendPortalURLToHref(learnLink)
           appendPortalURLToHref(discussLink)
           appendPortalURLToHref(networkLink)
