@@ -1127,12 +1127,14 @@
       </script>
       <script>
         var portalURL=""
+        var loginPageRedirection = false
 
         $(document).ready(async function() {
           const res = await fetch('./configurations.json')
           if(res) {
             const resJson = await res.json()
             portalURL = resJson.portalURL || ''
+            loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
           await fetchCourses('https://portal.igot-dev.in/api/course/v1/explore')
@@ -1241,21 +1243,38 @@
           appendPortalURLToHref(loginLink)
           appendPortalURLToHref(registerLink)
           appendPortalURLToHref(registerLink1)
-          appendPortalURLToHref(learnLink)
-          appendPortalURLToHref(discussLink)
-          appendPortalURLToHref(networkLink)
-          appendPortalURLToHref(coursesLink)
-          appendPortalURLToHref(careerLink)
-          appendPortalURLToHref(competenciesLink)
-          appendPortalURLToHref(eventsLink)
           appendPortalURLToHref(faqLink)
           appendPortalURLToHref(contactUsLink)
+          // TODO Enable this, when redirection issue resolved
+          // appendPortalURLToHref(learnLink)
+          // appendPortalURLToHref(discussLink)
+          // appendPortalURLToHref(networkLink)
+          // appendPortalURLToHref(coursesLink)
+          // appendPortalURLToHref(careerLink)
+          // appendPortalURLToHref(competenciesLink)
+          // appendPortalURLToHref(eventsLink)
+
+          // TODO Enable this, when redirection issue resolved
+          appendLoginURLToHref(learnLink)
+          appendLoginURLToHref(discussLink)
+          appendLoginURLToHref(networkLink)
+          appendLoginURLToHref(coursesLink)
+          appendLoginURLToHref(careerLink)
+          appendLoginURLToHref(competenciesLink)
+          appendLoginURLToHref(eventsLink)
         }
 
         async function appendPortalURLToHref(element){
           const oldhref = element.getAttribute("href")
-          element.setAttribute("href", `${portalURL}${oldhref}`);
+            element.setAttribute("href", `${portalURL}${oldhref}`);
         }
+
+        // TODO: Remove this method, once redirection links for hubs is fixed,
+        //  This is a quick fix for urgent deployment
+        async function appendLoginURLToHref(element) {
+          element.setAttribute("href", `${portalURL}/protected/v8/resource`);
+        }
+
       </script>
 
     </body>
