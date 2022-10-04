@@ -1138,7 +1138,7 @@
           }
           await updateLinks()
           var hostName=window.location.origin.replace('www.','')
-          await fetchCourses(hostName + '/api/course/v1/explore')
+          await fetchCourses('portal.' + hostName + '/api/course/v1/explore')
         })
 
         async function fetchCourses(url){
