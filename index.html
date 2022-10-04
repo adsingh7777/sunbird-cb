@@ -1137,7 +1137,7 @@
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
-          await fetchCourses('https://portal.igot-dev.in/api/course/v1/explore')
+          await fetchCourses('/api/course/v1/explore')
         })
 
         async function fetchCourses(url){
