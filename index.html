@@ -1137,7 +1137,8 @@
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
-          await fetchCourses('/api/course/v1/explore')
+          var hostName=window.location.origin.replace('www.','')
+          await fetchCourses(hostName + '/api/course/v1/explore')
         })
 
         async function fetchCourses(url){
