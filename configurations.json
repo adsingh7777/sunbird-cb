@@ -1,4 +1,4 @@
 {
     "portalURL": "https://portal.igot-dev.in",
-    "loginPageRedirection": true
+    "loginPageRedirection": false
 }

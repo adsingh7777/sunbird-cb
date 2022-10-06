@@ -1137,8 +1137,8 @@
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
-          var hostName=window.location.origin.replace('www','portal')
-          await fetchCourses(hostName + '/api/course/v1/explore')
+          // var hostName=window.location.origin.replace('www','portal')
+          await fetchCourses(portalURL + '/api/course/v1/explore')
         })
 
         async function fetchCourses(url){
@@ -1247,22 +1247,25 @@
           appendPortalURLToHref(faqLink)
           appendPortalURLToHref(contactUsLink)
           // TODO Enable this, when redirection issue resolved
-          // appendPortalURLToHref(learnLink)
-          // appendPortalURLToHref(discussLink)
-          // appendPortalURLToHref(networkLink)
-          // appendPortalURLToHref(coursesLink)
-          // appendPortalURLToHref(careerLink)
-          // appendPortalURLToHref(competenciesLink)
-          // appendPortalURLToHref(eventsLink)
+          if(!loginPageRedirection){
+            appendPortalURLToHref(learnLink)
+            appendPortalURLToHref(discussLink)
+            appendPortalURLToHref(networkLink)
+            appendPortalURLToHref(coursesLink)
+            appendPortalURLToHref(careerLink)
+            appendPortalURLToHref(competenciesLink)
+            appendPortalURLToHref(eventsLink)
+          } else {
+            // TODO Enable this, when redirection issue resolved
+            appendLoginURLToHref(learnLink)
+            appendLoginURLToHref(discussLink)
+            appendLoginURLToHref(networkLink)
+            appendLoginURLToHref(coursesLink)
+            appendLoginURLToHref(careerLink)
+            appendLoginURLToHref(competenciesLink)
+            appendLoginURLToHref(eventsLink)
+          }
 
-          // TODO Enable this, when redirection issue resolved
-          appendLoginURLToHref(learnLink)
-          appendLoginURLToHref(discussLink)
-          appendLoginURLToHref(networkLink)
-          appendLoginURLToHref(coursesLink)
-          appendLoginURLToHref(careerLink)
-          appendLoginURLToHref(competenciesLink)
-          appendLoginURLToHref(eventsLink)
         }
 
         async function appendPortalURLToHref(element){
