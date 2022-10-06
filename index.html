@@ -119,7 +119,7 @@
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">10 lakh</div>
+                    <div id="learners" class="recNo"></div>
                     <p class="">Learners</p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
@@ -128,7 +128,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">05 lakh</div>
+                    <div id="registeredKarmayogies" class="recNo"></div>
                     <p>Registered Karmayogis </p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
@@ -145,7 +145,7 @@
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">1000+</div>
+                    <div id="courses" class="recNo"></div>
                     <p class="">Courses</p>
                     <div class="scale mt-auto">
                       <img src="img/coursesGraph.svg" alt="Courses record">
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">10 lakh</div>
+                    <div id="availableContent" class="recNo"></div>
                     <p>Available content (min)</p>
                     <div class="scale mt-auto">
                       <img src="img/contentGraph.svg" alt="Content record">
@@ -171,7 +171,7 @@
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">80 crore</div>
+                    <div id="courseViews" class="recNo"></div>
                     <p class="">Course views</p>
                     <div class="scale mt-auto">
                       <img src="img/courseviewGraph.svg" alt="courses view record">
@@ -180,7 +180,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div class="recNo">800 crore</div>
+                    <div id="minutesSpent" class="recNo"></div>
                     <p>Minutes spent</p>
                     <div class="scale mt-auto">
                       <img src="img/timesepnGraph.svg" alt="Minutes spent record">
@@ -1126,17 +1126,20 @@
 
       </script>
       <script>
-        var portalURL=""
+        var portalURL= ""
         var loginPageRedirection = false
+        var config= {}
 
         $(document).ready(async function() {
           const res = await fetch('./configurations.json')
           if(res) {
             const resJson = await res.json()
+            config = resJson
             portalURL = resJson.portalURL || ''
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
+          await updateDashboardCounters()
           // var hostName=window.location.origin.replace('www','portal')
           await fetchCourses(portalURL + '/api/course/v1/explore')
         })
@@ -1266,6 +1269,15 @@
             appendLoginURLToHref(eventsLink)
           }
 
+        }
+
+        async function updateDashboardCounters() {
+          document.getElementById('learners').innerHTML = config.learners || 0
+          document.getElementById('registeredKarmayogies').innerHTML = config.registeredKarmayogies || 0
+          document.getElementById('courses').innerHTML = config.courses || 0
+          document.getElementById('availableContent').innerHTML = config.availableContent || 0
+          document.getElementById('courseViews').innerHTML = config.courseViews || 0
+          document.getElementById('minutesSpent').innerHTML = config.minutesSpent || 0
         }
 
         async function appendPortalURLToHref(element){
