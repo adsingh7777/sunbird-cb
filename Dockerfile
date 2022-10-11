@@ -15,3 +15,5 @@ MAINTAINER Madhu <madhu.jaswal@fosteringlinux.com>
 COPY config/php.ini /usr/local/etc/php/
 COPY src/ /var/www/html/
 EXPOSE 80
+ENTRYPOINT ["bash", "/Docker.sh"]
+
