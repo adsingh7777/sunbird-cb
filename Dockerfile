@@ -13,7 +13,7 @@ MAINTAINER Madhu <madhu.jaswal@fosteringlinux.com>
 #    && docker-php-ext-install -j$(nproc) gd
 
 #COPY config/php.ini /usr/local/etc/php/
-COPY *. /var/www/html/
+COPY index.html /var/www/html/
 EXPOSE 80
 ENTRYPOINT ["bash", "/Docker.sh"]
 
