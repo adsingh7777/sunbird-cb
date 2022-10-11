@@ -12,7 +12,7 @@ MAINTAINER Madhu <madhu.jaswal@fosteringlinux.com>
 #    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
 #    && docker-php-ext-install -j$(nproc) gd
 
-COPY config/php.ini /usr/local/etc/php/
+#COPY config/php.ini /usr/local/etc/php/
 COPY src/ /var/www/html/
 EXPOSE 80
 ENTRYPOINT ["bash", "/Docker.sh"]
