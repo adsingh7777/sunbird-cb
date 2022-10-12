@@ -14,6 +14,5 @@ docker build -f ./Dockerfile --label commitHash=$(git rev-parse --short HEAD) -t
 
 echo {\"image_name\" : \"${name}\", \"image_tag\" : \"${build_tag}\", \"node_name\" : \"$node\"} > metadata.json
 
-docker run -d --name static_domain$BUILD_NUMBER -p 81:80 ${org}/${name}:${build_tag}
 
 
