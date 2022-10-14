@@ -1,10 +1,10 @@
 {
     "portalURL": "https://portal.karmayogi.nic.in",
     "loginPageRedirection": false,
-    "learners": "10 lakh",
+    "learners": "147705",
     "registeredKarmayogies": "05 lakh",
-    "courses": "10 lakh",
-    "availableContent": "10 lakh",
-    "courseViews": "80 crore",
-    "minutesSpent": "800 crore"
+    "courses": "282",
+    "availableContent": "40156",
+    "courseViews": "4166",
+    "minutesSpent": "12000"
 }
