@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link id="id-app-fav-icon" rel="icon" type="image/png" href="favicon.png" />
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,13 +114,13 @@
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Number of Users/MDO's</p>
+                  <p class="mb-2 mb-md-3">Number of users</p>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="learners" class="recNo"></div>
-                    <p class="">Karmayogis Onboarded </p>
+                    <p class="">Learners</p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
                     </div>
@@ -130,7 +129,7 @@
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="registeredKarmayogies" class="recNo"></div>
-                    <p>Registered MDO's </p>
+                    <p>Registered Karmayogis </p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
                     </div>
@@ -141,7 +140,7 @@
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Available Content </p>
+                  <p class="mb-2 mb-md-3">Available content </p>
                 </div>
                 
                 <div class="col-md-6">
@@ -156,7 +155,7 @@
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="availableContent" class="recNo"></div>
-                    <p>Available Content (min)</p>
+                    <p>Available content (min)</p>
                     <div class="scale mt-auto">
                       <img src="img/contentGraph.svg" alt="Content record">
                     </div>
@@ -173,18 +172,18 @@
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="courseViews" class="recNo"></div>
-                    <p class="">Course Enrollments</p>
+                    <p class="">Course views</p>
                     <div class="scale mt-auto">
-                      <img src="img/courseviewGraph.svg" alt="course enrollments record">
+                      <img src="img/courseviewGraph.svg" alt="courses view record">
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="minutesSpent" class="recNo"></div>
-                    <p>Learning Time (min)</p>
+                    <p>Minutes spent</p>
                     <div class="scale mt-auto">
-                      <img src="img/timesepnGraph.svg" alt="Learning time record">
+                      <img src="img/timesepnGraph.svg" alt="Minutes spent record">
                     </div>
                   </div>
                 </div>
