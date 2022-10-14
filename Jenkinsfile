@@ -27,7 +27,7 @@ node('build-slave') {
 				
 				docker build -f ./Dockerfile -t $docker_pre_build .
 				docker run -itd --name $docker_pre_build $docker_pre_build:latest && docker cp $docker_pre_build:/sunbird-cb-staticweb/* .
-				sleep 30
+				//sleep 30
 				docker rm -f $docker_pre_build
 				docker rmi -f $docker_pre_build
             '''
