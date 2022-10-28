@@ -100,7 +100,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {font-size: 2.5rem;letter-spacing: -1px;line-height: 1.2;}
 h2, .h2 {font-size: 1.75rem;}
 h4,.h4 {font-size: 1.125rem;}
-h6. .h6 {font-size: .875rem;}
+h6, .h6 {font-size: .875rem;}
 /* h2, .h2 {font-size: 1.5rem;}
 h3, .h3 {font-size: 1.125rem;}
 h4, .h4 {font-size: 0.875rem;} */
@@ -625,6 +625,9 @@ hr {
     opacity: 1;
 }
 .copyrightNic {width: 70%; margin: 0 auto; margin-bottom: 1.9rem;}
+img.footer-logo{
+    height: 30px;
+}
 .govt-logo {
     background-color: #1B2133;
     height: 90px;

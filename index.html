@@ -14,7 +14,7 @@
   <!-- Custom style CSS -->
   <link href="css/style.css" rel="stylesheet">    
 
-  <title>कर्मयोगी भारत</title>
+  <title>iGOT</title>
 </head>
 <body>
   <header class="header">
@@ -64,8 +64,8 @@
             <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
           </form>
           <div class="register d-flex">
-            <div class="logIn mx-2"><a id="loginLink" href="/protected/v8/resource" class="btn btn-default">Login</a></div>
-            <div class="signUp"><a id="registerLink" href="/public/signup" class="btn btn-primary">Register</a></div>
+            <div class="logIn mx-2"><a id="loginLink" href="protected/v8/resource" class="btn btn-default">Login</a></div>
+            <div class="signUp"><a id="registerLink" href="public/signup" class="btn btn-primary">Register</a></div>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
               <span class="visually-hidden">Next</span>
             </button> -->
           </div>
-          <div class="sliderSep"></div>
+          <!-- <div class="sliderSep"></div> -->
         </div>
       </div>
     </div>
@@ -112,16 +112,16 @@
       <div class="row d-md-flex justify-content-center">
         <div class="col-md-12 col-lg-10">
           <div class="row d-flex igotAnalyticsMobile">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Number of Users/MDO's</p>
+                  <p class="mb-2 mb-md-3">Number of users/MDO's</p>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="learners" class="recNo"></div>
-                    <p class="">Karmayogis Onboarded </p>
+                    <div id="karmayogiOnboarded" class="recNo"></div>
+                    <p class="">Karmayogis onboarded </p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
                     </div>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="registeredKarmayogies" class="recNo"></div>
+                    <div id="registeredMdo" class="recNo"></div>
                     <p>Registered MDO's </p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
@@ -138,10 +138,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Available Content </p>
+                  <p class="mb-2 mb-md-3">Available content </p>
                 </div>
                 
                 <div class="col-md-6">
@@ -156,7 +156,7 @@
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
                     <div id="availableContent" class="recNo"></div>
-                    <p>Available Content (min)</p>
+                    <p>Available content (hours)</p>
                     <div class="scale mt-auto">
                       <img src="img/contentGraph.svg" alt="Content record">
                     </div>
@@ -164,7 +164,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6" style="display:none;">
               <div class="row">
                 <div class="col-md-12">
                   <p class="mb-2 mb-md-3">Engagement</p>
@@ -172,8 +172,8 @@
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="courseViews" class="recNo"></div>
-                    <p class="">Course Enrollments</p>
+                    <div id="courseEnrollments" class="recNo"></div>
+                    <p class="">Course enrollments</p>
                     <div class="scale mt-auto">
                       <img src="img/courseviewGraph.svg" alt="course enrollments record">
                     </div>
@@ -181,8 +181,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="minutesSpent" class="recNo"></div>
-                    <p>Learning Time (min)</p>
+                    <div id="activeUsers" class="recNo"></div>
+                    <p>No of users active today</p>
                     <div class="scale mt-auto">
                       <img src="img/timesepnGraph.svg" alt="Learning time record">
                     </div>
@@ -190,7 +190,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- <div class="d-flex justify-content-center my-3 py-0 py-md-2"><a href="dashboard.html" class="btn btn-radius-default">View Dashboard </a></div> -->
 
         </div>
         
@@ -781,7 +781,7 @@
   </div>
 </section>
 <!-- end here -->
-<section class="igotVision mb-5 mt-5 pt-4 pb-2">
+<section class="igotVision mb-5 pb-2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10">
@@ -813,20 +813,20 @@
         </div>
       </div>
     </section>
-    <section class="igotRegister mt-0 mt-md-5">
+    <section class="igotRegister mt-0 mt-md-2">
       <div class="strip"></div>
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-lg-4">
             <div class="igot-title">
               <h2 class="h2"><span>Take the</span> <span>first step</span> toward learning</h2>
-              <div class="registerLink"><a id="registerLink1" href="/public/signup" class="custom-btn">Register Now</a></div>
+              <div class="registerLink"><a id="registerLink1" href="public/signup" class="custom-btn">Register Now</a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="igotHub mt-5 pt-2">
+    <section class="igotHub mt-2 pt-2">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -838,7 +838,7 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Learning hub"></div>
+                      <div class=""><img src="img/school.svg" alt="Learning hub"></div>
                       <h3 class="h4">Learning hub</h3>  
                     </div>
                     <p>Learn anywhere, anytime and bridge your competency gaps using impactful and engaging learning content.</p>
@@ -851,7 +851,7 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Discussion hub"></div>
+                      <div class=""><img src="img/forum.svg" alt="Discussion hub"></div>
                       <h3 class="h4">Discussion hub</h3>  
                     </div>
                     <p>Discuss and learn with peers, colleagues, civil servants and experts across the country.</p>
@@ -864,7 +864,7 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Network hub"></div>
+                      <div class=""><img src="img/group.svg" alt="Network hub"></div>
                       <h3 class="h4">Network hub</h3>  
                     </div>
                     <p>Connect with civil servants across the country. Grow your network within government circles.</p>
@@ -877,7 +877,7 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Competency hub"></div>
+                      <div class=""><img src="img/extension.svg" alt="Competency hub"></div>
                       <h3 class="h4">Competency hub</h3>  
                     </div>
                     <p>Identify your competency requirements, competency gaps, so you can grow faster in the right direction.</p>
@@ -890,7 +890,7 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Career hub"></div>
+                      <div class=""><img src="img/work.svg" alt="Career hub"></div>
                       <h3 class="h4">Career hub</h3>  
                     </div>
                     <p>Explore career opportunities across the country and signal your expertise.</p>
@@ -903,10 +903,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Network hub"></div>
-                      <h3 class="h4">Network hub</h3>  
+                      <div class=""><img src="img/event.svg" alt="Event hub"></div>
+                      <h3 class="h4">Event hub</h3>  
                     </div>
-                    <p>Connect with civil servants across the country. Grow your network within government circles.</p>
+                    <p>Enable simultaneous interactive experiential and peer learning.</p>
                   </div>
 
 
@@ -1046,19 +1046,20 @@
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a id="learnLink" href="/page/learn" class="f-link">Learn</a></li>
-                  <li><a id="discussLink" href="/app/discussion-forum?page=home" class="f-link">Discuss</a></li>
-                  <li><a id="networkLink" href="/app/network-v2" class="f-link">Network</a></li>
-                  <li><a id="coursesLink" href="/page/learn" class="f-link">Courses</a></li>
+                  <li><a id="learnLink" href="page/learn" class="f-link">Learn</a></li>
+                  <li><a id="discussLink" href="app/discussion-forum?page=home" class="f-link">Discuss</a></li>
+                  <li><a id="networkLink" href="app/network-v2" class="f-link">Network</a></li>
+                  <li><a id="coursesLink" href="page/learn" class="f-link">Courses</a></li>
+                  
                 </ul>
               </div>
             </div>
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a id="careerLink" href="/app/careers/home" class="f-link">Career</a></li>
-                  <li><a id="competenciesLink" href="/app/competencies" class="f-link">Competencies</a></li>
-                  <li><a id="eventsLink" href="/app/event-hub" class="f-link">Events</a></li>
+                  <li><a id="careerLink" href="app/careers/home" class="f-link">Career</a></li>
+                  <li><a id="competenciesLink" href="app/competencies" class="f-link">Competencies</a></li>
+                  <li><a id="eventsLink" href="app/event-hub" class="f-link">Events</a></li>
                   <li><a href="https://karmayogibharat.gov.in/" target="_blank" class="f-link">Media</a></li>
                 </ul>
               </div>
@@ -1068,8 +1069,10 @@
                 <ul>
                   <li><a href="https://karmayogibharat.gov.in/programme.php" target="_blank" class="f-link">Mission Karmayogi</a></li>
                   <li><a href="https://frac-dictionary.igotkarmayogi.gov.in/"  class="f-link">Frac Dictionary</a></li>
-                  <li><a id="faqLink" href="/public/faq" class="f-link">Frequently asked questions</a></li>
-                  <li><a id="contactUsLink" href="/public/contact" class="f-link">Contact Us</a></li>
+                  <li><a id="cbcLink" href="https://cbc.gov.in/" class="f-link" target="_blank">CBC</a></li>
+                  <li><a id="doptLink" href="https://dopt.gov.in/" class="f-link" target="_blank">Dopt</a></li>
+                  <li><a id="faqLink" href="public/faq" class="f-link">Frequently asked questions</a></li>
+                  <li><a id="contactUsLink" href="public/contact" class="f-link">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -1085,7 +1088,7 @@
                   <!-- <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a> -->
 
                 </div>
-                <div class="f-igotLogo"><img src="img/igotLogo.jpg" alt="iGot logo"></div>
+                <!-- <div class="f-igotLogo"><img src="img/igotLogo.png" alt="iGot logo"></div> -->
               </div>
 
 
@@ -1095,8 +1098,12 @@
             <div class="col-md-12">
               <hr>
               <div class="copyrightNic d-flex align-items-center">
-                <div class="nicImg me-4"><a href="https://www.nic.in/" target="_blank"><img src="img/nicImg.jpg" alt="National informatics center"></a></div>
-                <p class="f-12 f-500">Copyright © Website content managed by Karmayogi Bharat. All Rights Reserved. platform is designed, developed and hosted by National Informatics Centre, Ministry of Electronics & Information Technology, Government of India.</p>
+                <div class="nicImg me-4">
+                  <a href="" id="copyrightLink" target="_blank">
+                    <img src="img/karmayogiLogo.svg" alt="National informatics center" class="footer-logo" height="30px">
+                  </a>
+                </div>
+                <p class="f-12 f-500">Copyright © Website managed by Karmayogi Bharat.</p>
               </div>
             </div>
           </div>
@@ -1106,6 +1113,9 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-10">
                 <div class="govlogo d-flex flex-wrap flex-md-nowrap justify-content-between ">
+                  <p><a href="https://cbc.gov.in/" target="_blank"><img src="img/cbc.png" alt="CBC logo"></a></p>
+                  <p><a href="https://dopt.gov.in/" target="_blank" class="dopt_link"><img src="img/dopt.png" alt="DOPT logo"></a></p>
+                  
                   <p><a href="https://www.mygov.in/" target="_blank"><img src="img/mygov-footer-logo.png" alt="Mygov logo"></a></p>
                   <p><a href="https://data.gov.in/" target="_blank"><img src="img/data-gov-logo.png" alt="Data gov logo"></a></p>
                   <p><a href="https://www.digitalindia.gov.in/" target="_blank"><img src="img/digital-india-logo.png" alt="Digital India logo"></a></p>
@@ -1128,6 +1138,8 @@
       </script>
       <script>
         var portalURL= ""
+        var contentBucket = ""
+        var certImage = ""
         var loginPageRedirection = false
         var config= {}
 
@@ -1137,6 +1149,8 @@
             const resJson = await res.json()
             config = resJson
             portalURL = resJson.portalURL || ''
+            contentBucket = resJson.contentBucket || ''
+            certImage = resJson.certImage || ''
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
@@ -1144,6 +1158,31 @@
           // var hostName=window.location.origin.replace('www','portal')
           await fetchCourses(portalURL + '/api/course/v1/explore')
         })
+        function timeConvert(n) {
+            var num = n;
+            var hours = (num / 60);
+            var rhours = Math.floor(hours);
+            var minutes = (hours - rhours) * 60;
+            var rminutes = Math.round(minutes);
+            if (rminutes === 0) {
+              return rhours + "h";
+            }
+            return rhours + "h " + rminutes + "m.";
+          }
+
+        function getChangedUrl(url) {
+            if (url && url.length > 0) {
+              const tempData = url.split('content')
+              if (url.indexOf(`/collection`) > 0) {
+                return `${portalURL}${contentBucket}${tempData[tempData.length - 1]}`
+              }
+              if (url.indexOf('/public/content') > 0) {
+                return `${portalURL}${certImage}${tempData[tempData.length - 1]}`
+              }
+              return `${portalURL}${contentBucket}/content${tempData[tempData.length - 1]}`
+            }
+            return url
+          }
 
         async function fetchCourses(url){
           let courses = []
@@ -1166,11 +1205,18 @@
           if(courses.length) {
             for(let i=0; i<courses.length; i++) {
               let c = courses[i]
+              let imagePath = c.appIcon
+              if(c.posterImage) {
+                imagePath = c.posterImage
+              }
 
+              
+              var imgUrl = getChangedUrl(imagePath)
+                
               // content += "<div class=\"item\">" + courses[i].name + "</div>"
               content += `<div class="item">
                             <a href="${portalURL}/public/toc/${c.identifier}/overview">
-                                <div class="igot-display"><img src="${c.posterImage}" alt="${c.name}">
+                                <div class="igot-display"><img src="${imgUrl}" alt="${c.name}">
                                 </div>
                                 <div class="igot-courseContent">
                                     <div class="c-score d-flex align-items-center mb-2">
@@ -1193,7 +1239,7 @@
                                     <div class="courseDetails">
                                         <h2 class="h6 mb-2"> ${c.name} </h2>
                                         <p> ${c.description}</p>
-                                        <div class="dureation">Learning Hours : <span>${c.duration} mins</span></div>
+                                        <div class="dureation">Learning Hours : <span>${timeConvert(c.duration)}</span></div>
                                     </div>
                                 </div>
                             </a>
@@ -1245,11 +1291,13 @@
           const eventsLink = document.getElementById('eventsLink')
           const faqLink = document.getElementById('faqLink')
           const contactUsLink = document.getElementById('contactUsLink')
+          const copyrightLink = document.getElementById('copyrightLink')
           appendPortalURLToHref(loginLink)
           appendPortalURLToHref(registerLink)
           appendPortalURLToHref(registerLink1)
           appendPortalURLToHref(faqLink)
           appendPortalURLToHref(contactUsLink)
+          appendPortalURLToHref(copyrightLink)
           // TODO Enable this, when redirection issue resolved
           if(!loginPageRedirection){
             appendPortalURLToHref(learnLink)
@@ -1273,12 +1321,12 @@
         }
 
         async function updateDashboardCounters() {
-          document.getElementById('learners').innerHTML = config.learners || 0
-          document.getElementById('registeredKarmayogies').innerHTML = config.registeredKarmayogies || 0
+          document.getElementById('karmayogiOnboarded').innerHTML = config.karmayogiOnboarded || 0
+          document.getElementById('registeredMdo').innerHTML = config.registeredMdo || 0
           document.getElementById('courses').innerHTML = config.courses || 0
           document.getElementById('availableContent').innerHTML = config.availableContent || 0
-          document.getElementById('courseViews').innerHTML = config.courseViews || 0
-          document.getElementById('minutesSpent').innerHTML = config.minutesSpent || 0
+          document.getElementById('courseEnrollments').innerHTML = config.courseEnrollments || 0
+          document.getElementById('activeUsers').innerHTML = config.activeUsers || 0
         }
 
         async function appendPortalURLToHref(element){

@@ -11,9 +11,11 @@
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom style CSS -->
-  <link href="css/style.css" rel="stylesheet">    
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-hindi.css" rel="stylesheet">
 
-  <title>कर्मयोगी भारत</title>
+
+  <title>iGOT</title>
 </head>
 <body>
   <header class="header">
@@ -22,7 +24,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-8">
             <div class="flag f-10">
-              <img class="px-1" src="img/flag.svg" alt="Indian flag icon">WELCOME TO iGOT KARMAYOGI
+              <img class="px-1" src="img/flag.svg" alt="Indian flag icon">आईगॉट कर्मयोगी में आपका स्वागत है
             </div>
           </div>
           <div class="col-4">
@@ -49,13 +51,13 @@
         <div class="collapse navbar-collapse" id="navbarKarmayogi">
           <ul class="navbar-nav ms-md-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">होम</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#dashboardAnalytics">Dashboard</a>
+              <a class="nav-link" href="index.html#dashboardAnalytics">डैशबोर्ड</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#igotcourses">Courses</a>
+              <a class="nav-link" href="index.html#igotcourses">कोर्स</a>
             </li>
           </ul>
           <form role="search">
@@ -63,8 +65,8 @@
             <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
           </form>
           <div class="register d-flex">
-            <div class="logIn mx-2"><a id="loginLink" href="/protected/v8/resource" class="btn btn-default">Login</a></div>
-            <div class="signUp"><a id="registerLink" href="/public/signup" class="btn btn-primary">Register</a></div>
+            <div class="logIn mx-3"><a href="protected/v8/resource" class="btn btn-default">लॉगइन करें</a></div>
+            <div class="signUp"><a href="public/signup" class="btn btn-primary">रजिस्टर करें</a></div>
           </div>
         </div>
       </div>
@@ -83,7 +85,7 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/sliderImg1.jpg" class="d-block w-100" alt="karmayogi bharat slider images">
+                  <img src="img/sliderImg1-hindi.jpg" class="d-block w-100" alt="karmayogi bharat slider images">
                 </div>
               <!-- <div class="carousel-item">
                 <img src="img/sliderImg1.jpg" class="d-block w-100" alt="karmayogi bharat slider images">
@@ -101,7 +103,7 @@
               <span class="visually-hidden">Next</span>
             </button> -->
           </div>
-          <div class="sliderSep"></div>
+          <!-- <div class="sliderSep"></div> -->
         </div>
       </div>
     </div>
@@ -111,16 +113,16 @@
       <div class="row d-md-flex justify-content-center">
         <div class="col-md-12 col-lg-10">
           <div class="row d-flex igotAnalyticsMobile">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Number of users</p>
+                  <p class="mb-2 mb-md-3">उपयोगकर्ताओं की संख्या</p>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="learners" class="recNo"></div>
-                    <p class="">Learners</p>
+                    <div class="recNo"><span>10</span> लाख </div>
+                    <p class="">शिक्षार्थी</p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
                     </div>
@@ -128,8 +130,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="registeredKarmayogies" class="recNo"></div>
-                    <p>Registered Karmayogis </p>
+                    <div class="recNo"><span>05</span> लाख </div>
+                    <p>पंजीकृत कर्मयोगी</p>
                     <div class="scale mt-auto">
                       <img src="img/learnsGraph.svg" alt="learns record">
                     </div>
@@ -137,16 +139,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Available content </p>
+                  <p class="mb-2 mb-md-3">उपलब्ध विषय-सामग्री</p>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="courses" class="recNo"></div>
-                    <p class="">Courses</p>
+                    <div class="recNo"><span>1000+</span></div>
+                    <p class="">कोर्स</p>
                     <div class="scale mt-auto">
                       <img src="img/coursesGraph.svg" alt="Courses record">
                     </div>
@@ -154,8 +156,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="availableContent" class="recNo"></div>
-                    <p>Available content (min)</p>
+                    <div class="recNo"><span>10</span> लाख </div>
+                    <p>उपलब्ध विषय-सामग्री(कम-से-कम)</p>
                     <div class="scale mt-auto">
                       <img src="img/contentGraph.svg" alt="Content record">
                     </div>
@@ -163,16 +165,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="display: none;">
               <div class="row">
                 <div class="col-md-12">
-                  <p class="mb-2 mb-md-3">Engagement</p>
+                  <p class="mb-2 mb-md-3">सहभागिता</p>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="courseViews" class="recNo"></div>
-                    <p class="">Course views</p>
+                    <div class="recNo"><span>80</span> करोड़</div>
+                    <p class="">लोगों ने कोर्स देखा</p>
                     <div class="scale mt-auto">
                       <img src="img/courseviewGraph.svg" alt="courses view record">
                     </div>
@@ -180,8 +182,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="metrics d-flex flex-column">
-                    <div id="minutesSpent" class="recNo"></div>
-                    <p>Minutes spent</p>
+                    <div class="recNo"><span>800</span> करोड़ </div>
+                    <p>मिनट बिताए</p>
                     <div class="scale mt-auto">
                       <img src="img/timesepnGraph.svg" alt="Minutes spent record">
                     </div>
@@ -189,7 +191,9 @@
                 </div>
               </div>
             </div>
-
+            <!-- <div class="d-flex justify-content-center my-3 py-0 py-md-2">
+              <a href="dashboard.html" class="btn btn-radius-default">डैशबोर्ड देखें </a>
+            </div> -->
 
         </div>
         
@@ -206,7 +210,7 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-md-9">
-        <h1 class="h2 text-center mb-3 mb-md-5 pb-1">Featured courses</h1>
+        <h1 class="h2 text-center mb-3 mb-md-5 pb-1">विशेष प्रदर्शित कोर्स</h1>
       </div>
       <div class="col-md-12 col-lg-10">
         <div class="courseItmes d-flex justify-content-center ">
@@ -216,7 +220,7 @@
                 <div class="igot-display"><img src="img/officeprocedure.jpeg" alt="course content image"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                       <!-- <div class="c-star me-auto">
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
@@ -233,9 +237,9 @@
                         </div> -->
                       </div>
                       <div class="courseDetails">
-                        <h2 class="h6 mb-2">Office Procedure</h2>
-                        <p>Office Procedure</p>
-                        <div class="dureation">Learning Hours : <span>2h 17m</span></div>
+                        <h2 class="h6 mb-2">कार्यालय प्रक्रिया</h2>
+                        <p>कार्यालय प्रक्रिया</p>
+                        <div class="dureation">सीखने की अवधि : <span>2 घंटा 17 मिनट </span></div>
                       </div>
                     </div>
                   </a>
@@ -245,7 +249,7 @@
                     <div class="igot-display"><img src="img/parliament.jpeg" alt="Parliamentary Procedures video courses"></div>
                     <div class="igot-courseContent">
                       <div class="c-score d-flex align-items-center mb-2">
-                        <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                        <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                     <!-- <div class="c-star me-auto">
                       <i class="fa-sharp fa-solid fa-star"></i>
                       <i class="fa-sharp fa-solid fa-star"></i>
@@ -260,9 +264,9 @@
                       </div> -->
                     </div>
                     <div class="courseDetails">
-                      <h2 class="h6 mb-2">Parliamentary Procedures</h2>
-                      <p>Course on Parliamentary Procedures</p>
-                      <div class="dureation">Learning Hours : <span>2h</span></div>
+                      <h2 class="h6 mb-2">संसदीय प्रक्रियाएं</h2>
+                      <p>संसदीय प्रक्रियाओं पर पाठ्यक्रम</p>
+                      <div class="dureation">सीखने की अवधि : <span>2 घंटा</span></div>
                     </div>
                   </div>
                 </a>
@@ -272,7 +276,7 @@
                   <div class="igot-display"><img src="img/gem.jpeg" alt="Government E Marketplace video courses"></div>
                   <div class="igot-courseContent">
                     <div class="c-score d-flex align-items-center mb-2">
-                      <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                      <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -289,9 +293,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">Government E Marketplace </h2>
-                    <p>A Course on Government e Marketplace (GeM)</p>
-                    <div class="dureation">Learning Hours : <span>1h 9m</span></div>
+                    <h2 class="h6 mb-2">गवर्नमेंट ई मार्केटप्लेस </h2>
+                    <p>गवर्नमेंट ई मार्केटप्लेस पर एक कोर्स (GeM)</p>
+                    <div class="dureation">सीखने की अवधि : <span>1 घंटा 9 मिनट </span></div>
                   </div>
                 </div>
               </a>
@@ -302,7 +306,7 @@
                 <div class="igot-display"><img src="img/programcoverenglishmedium.jpeg" alt="The Rail Karmayogi Program video courses"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -319,9 +323,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">The Rail Karmayogi Program </h2>
-                    <p>The Rail Karmayogi Program is specially designed to help all frontline</p>
-                    <div class="dureation">Learning Hours : <span>5h</span></div>
+                    <h2 class="h6 mb-2">रेल कर्मयोगी कार्यक्रम </h2>
+                    <p>रेल कर्मयोगी कार्यक्रम विशेष रूप से सभी फ्रंटलाइन की मदद के लिए बनाया गया है</p>
+                    <div class="dureation">सीखने की अवधि : <span>5 घंटा </span></div>
                   </div>
                 </div>
               </a>
@@ -331,7 +335,7 @@
                 <div class="igot-display"><img src="img/constitutionalprovisionsatworkplace.jpeg" alt="Constitutional Provisions at Workplace courses"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -348,9 +352,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Constitutional Provisions at Workplace </h2>
-                    <p> Constitutional Provisions at Workplace </p>
-                    <div class="dureation">Learning Hours : <span>51m</span></div>
+                    <h2 class="h6 mb-2"> कार्यस्थल पर संवैधानिक प्रावधान </h2>
+                    <p> कार्यस्थल पर संवैधानिक प्रावधान </p>
+                    <div class="dureation">सीखने की अवधि : <span>51 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -360,7 +364,7 @@
                 <div class="igot-display"><img src="img/publicadministration.jpeg" alt="Public Administration courses"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -377,9 +381,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">Public Administration</h2>
-                    <p> Public Administration </p>
-                    <div class="dureation">Learning Hours : <span>1h 5m</span></div>
+                    <h2 class="h6 mb-2">लोक प्रशासन</h2>
+                    <p> लोक प्रशासन </p>
+                    <div class="dureation">सीखने की अवधि : <span>1 घंटा 5 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -389,7 +393,7 @@
                 <div class="igot-display"><img src="img/budgetfinal.jpeg" alt="Budget courses"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -406,9 +410,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">Budget</h2>
-                    <p>Budget </p>
-                    <div class="dureation">Learning Hours : <span>50m</span></div>
+                    <h2 class="h6 mb-2">बजट</h2>
+                    <p>बजट </p>
+                    <div class="dureation">सीखने की अवधि : <span>50 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -418,7 +422,7 @@
                 <div class="igot-display"><img src="img/whatsappimage.jpeg" alt="Pay, Allowances & Staff welfare courses"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -435,9 +439,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Pay, Allowances & Staff welfare </h2>
-                    <p> In this course we will learn about Indian Railways Pay, Allowances & Staff welfare in detail.  </p>
-                    <div class="dureation">Learning Hours : <span>1h</span></div>
+                    <h2 class="h6 mb-2">वेतन, भत्ते और कर्मचारी कल्याण</h2>
+                    <p> इस कोर्स में हम भारतीय रेल के वेतन, भत्तों और कर्मचारी कल्याण के बारे में जानेंगे… </p>
+                    <div class="dureation">सीखने की अवधि : <span>1 घंटा</span></div>
                   </div>
                 </div>
               </a>
@@ -447,7 +451,7 @@
                 <div class="igot-display"><img src="img/whatsappimage.jpeg" alt="Introduction to functions and organization of accounts department"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -464,9 +468,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Introduction to functions and organization of accounts department </h2>
-                    <p> In this course we will learn about Introduction to functions and organization of accounts department Indian Railways in detail. </p>
-                    <div class="dureation">Learning Hours : <span>45m 40s</span></div>
+                    <h2 class="h6 mb-2"> लेखा विभाग के कार्यों और संगठन का परिचय</h2>
+                    <p> इस पाठ्यक्रम में हम भारतीय रेलवे के लेखा विभाग के कार्यों और संगठन के परिचय के बारे में विस्तार से जानेंगे। </p>
+                    <div class="dureation">सीखने की अवधि : <span>45 मिनट 40 सेकंड</span></div>
                   </div>
                 </div>
               </a>
@@ -476,7 +480,7 @@
                 <div class="igot-display"><img src="img/whatsappimage.jpeg" alt="Freight Business course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -493,9 +497,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Freight Business</h2>
-                    <p> In this course we will learn about Freight Business in Indian Railway in detail. </p>
-                    <div class="dureation">Learning Hours : <span>47m 11s</span></div>
+                    <h2 class="h6 mb-2"> माल ढुलाई व्यवसाय</h2>
+                    <p> इस कोर्स में हम भारतीय रेलवे में फ्रेट बिजनेस के बारे में विस्तार से जानेंगे। </p>
+                    <div class="dureation">सीखने की अवधि : <span>47 मिनट 11 सेकंड</span></div>
                   </div>
                 </div>
               </a>
@@ -505,7 +509,7 @@
                 <div class="igot-display"><img src="img/sgImg.jpeg" alt="Stakeholders in Governance"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -522,9 +526,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Stakeholders in Governance </h2>
-                    <p>  Stakeholders in Governance </p>
-                    <div class="dureation">Learning Hours : <span>53m</span></div>
+                    <h2 class="h6 mb-2"> शासन में हितधारक </h2>
+                    <p>  शासन में हितधारक </p>
+                    <div class="dureation">सीखने की अवधि : <span>53 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -534,7 +538,7 @@
                 <div class="igot-display"><img src="img/pplogo.jpeg" alt="Public Procurement Framework of GOI course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -551,9 +555,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">  Public Procurement Framework of GOI  </h2>
-                    <p> Government organizations procure wide variety of goods and services, including execution of works, involving huge amount of funds. They need to follow the fundamental principles of Public Procurement, viz., – transparency, fairness, competition, economy, efficiency and accountability.   General Financial Rules provide the framework that helps the officers engaged in Public Procurement function.   </p>
-                    <div class="dureation">Learning Hours : <span>5h 42m</span></div>
+                    <h2 class="h6 mb-2">  भारत सरकार का सार्वजनिक खरीद ढांचा  </h2>
+                    <p> सरकारी संगठन कार्यों के निष्पादन सहित विभिन्न प्रकार की वस्तुओं और सेवाओं की खरीद करते हैं, जिसमें भारी मात्रा में धन शामिल होता है। उन्हें सार्वजनिक खरीद के मूलभूत सिद्धांतों का पालन करने की आवश्यकता है, जैसे - पारदर्शिता, निष्पक्षता, प्रतिस्पर्धा, अर्थव्यवस्था, दक्षता और जवाबदेही। सामान्य वित्तीय नियम वह ढांचा प्रदान करते हैं जो सार्वजनिक खरीद कार्य में लगे अधिकारियों की मदद करता है।   </p>
+                    <div class="dureation">सीखने की अवधि : <span>5 घंटा 42 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -563,7 +567,7 @@
                 <div class="igot-display"><img src="img/main.jpeg" alt=" Low Carbon Development: Planning & Modelling course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -580,9 +584,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Low Carbon Development: Planning & Modelling  </h2>
-                    <p>  This short overview module provides a high level introduction to climate change, low carbon development planning and the use of the EFFECT model (Energy Forecasting Framework and Emissions Consensus Tool).  </p>
-                    <div class="dureation">Learning Hours : <span>8h</span></div>
+                    <h2 class="h6 mb-2"> कम कार्बन विकास: योजना और मॉडलिंग  </h2>
+                    <p>  यह संक्षिप्त अवलोकन मॉड्यूल जलवायु परिवर्तन, कम कार्बन विकास योजना और प्रभाव मॉडल (ऊर्जा पूर्वानुमान रूपरेखा और उत्सर्जन सहमति उपकरण) के उपयोग के लिए एक उच्च स्तरीय परिचय प्रदान करता है।  </p>
+                    <div class="dureation">सीखने की अवधि : <span>8 घंटा</span></div>
                   </div>
                 </div>
               </a>
@@ -592,7 +596,7 @@
                 <div class="igot-display"><img src="img/restoring.jpeg" alt="Restoring Livelihoods with Psychosocial Support course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -609,9 +613,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Restoring Livelihoods with Psychosocial Support  </h2>
-                    <p>   How to understand and consider mental health needs when designing livelihood programs for conflict and fragile settings  </p>
-                    <div class="dureation">Learning Hours : <span>57m 23s</span></div>
+                    <h2 class="h6 mb-2"> मनोसामाजिक समर्थन के साथ आजीविका बहाल करना  </h2>
+                    <p>   संघर्ष और नाजुक सेटिंग्स के लिए आजीविका कार्यक्रम तैयार करते समय मानसिक स्वास्थ्य की जरूरतों को कैसे समझें और उन पर विचार करें  </p>
+                    <div class="dureation">सीखने की अवधि : <span>57 मिनट 23 सेकंड</span></div>
                   </div>
                 </div>
               </a>
@@ -621,7 +625,7 @@
                 <div class="igot-display"><img src="img/cfmain.jpeg" alt="Climate Finance: Innovative Approaches in Supporting Climate Action course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -638,9 +642,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Climate Finance: Innovative Approaches in Supporting Climate Action   </h2>
-                    <p>   How to understand and consider mental health needs when designing livelihood programs for conflict and fragile settings  </p>
-                    <div class="dureation">Learning Hours : <span>2h 25m</span></div>
+                    <h2 class="h6 mb-2"> जलवायु वित्त: जलवायु कार्रवाई का समर्थन करने में अभिनव दृष्टिकोण   </h2>
+                    <p>   संघर्ष और नाजुक सेटिंग्स के लिए आजीविका कार्यक्रम तैयार करते समय मानसिक स्वास्थ्य की जरूरतों को कैसे समझें और उन पर विचार करें  </p>
+                    <div class="dureation">सीखने की अवधि : <span>2 सेकंड 25 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -650,7 +654,7 @@
                 <div class="igot-display"><img src="img/ufpo.jpeg" alt="Understanding Financial Position of an organization course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -667,9 +671,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2"> Understanding Financial Position of an organization </h2>
-                    <p> By the end of this exercise, the participants will be able to understand how financial transactions occur in any organization. It will specifically help in understanding the balance sheet, Double-entry accounting system, and profit and loss (P&L) statement is a financial statement that summarizes the revenues, costs, and expenses incurred during a specified period. </p>
-                    <div class="dureation">Learning Hours : <span>43m 19s</span></div>
+                    <h2 class="h6 mb-2"> किसी संगठन की वित्तीय स्थिति को समझना </h2>
+                    <p> इस अभ्यास के अंत तक, प्रतिभागी यह समझने में सक्षम होंगे कि किसी भी संगठन में वित्तीय लेनदेन कैसे होते हैं। यह विशेष रूप से बैलेंस शीट, डबल-एंट्री अकाउंटिंग सिस्टम को समझने में मदद करेगा, और लाभ और हानि (पी एंड एल) स्टेटमेंट एक वित्तीय विवरण है जो एक निर्दिष्ट अवधि के दौरान राजस्व, लागत और व्यय का सारांश देता है। </p>
+                    <div class="dureation">सीखने की अवधि : <span>43 मिनट 19 सेकंड</span></div>
                   </div>
                 </div>
               </a>
@@ -679,7 +683,7 @@
                 <div class="igot-display"><img src="img/pppforinfraf.jpeg" alt=" Public Privare Partnerships (PPP) for Infrastructure Projects   course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -696,16 +700,16 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">  Public Privare Partnerships (PPP) for Infrastructure Projects   </h2>
-                    <p>  This course of ‘Public-Private Partnership (PPP) for Infrastructure Projects’ will assist in understanding what is Infrastructure, how much finance is required for the development and management of infrastructure, and what are financing options available and being opted. Public-Private Partnership, as an approach has been adopted for infrastructure development and management, internationally and nationally. This basic course covers the reasons for opting PPP by various National Governments across the world, how PPP definition has evolved? what is the structure of PPP, its framework, and its process? The course concludes by sharing national and international websites on PPP.
-                    This online course on PPP for Infrastructure Projects comprises of three modules :
-                    (i) Infrastructure an introduction
-                    (ii)  Infrastructure financing
-                    (iii) PPP for infrastructure projects
-                    Each module has well-defined objectives and learning from the module. Elements of Watch, Think, Do, Explore and Test are inbuilt in each module. An assessment to assess the level of one’s learning from the course is available at the end of the course. 
-                    Intended Audience: This course is designed for officers who have the interest to recap their knowledge on infrastructure or eager to learn about infrastructure, to know how funds and latest technical know-how is organized for development and management of Infrastructure by different levels of Governments, which now, are playing the role of a facilitator instead of their earlier role of providers.
+                    <h2 class="h6 mb-2">  बुनियादी ढांचा परियोजनाओं के लिए सार्वजनिक निजी भागीदारी (पीपीपी)   </h2>
+                    <p> इंफ्रास्ट्रक्चर प्रोजेक्ट्स के लिए पब्लिक-प्राइवेट पार्टनरशिप (पीपीपी) का यह कोर्स इन्फ्रास्ट्रक्चर क्या है, इंफ्रास्ट्रक्चर के विकास और प्रबंधन के लिए कितना वित्त आवश्यक है, और कौन से फाइनेंसिंग विकल्प उपलब्ध हैं और क्या चुने जा रहे हैं, यह समझने में सहायता करेगा। सार्वजनिक-निजी भागीदारी, अंतरराष्ट्रीय और राष्ट्रीय स्तर पर बुनियादी ढांचे के विकास और प्रबंधन के लिए एक दृष्टिकोण के रूप में अपनाया गया है। इस बुनियादी पाठ्यक्रम में दुनिया भर में विभिन्न राष्ट्रीय सरकारों द्वारा पीपीपी को चुनने के कारणों को शामिल किया गया है, पीपीपी की परिभाषा कैसे विकसित हुई है? पीपीपी की संरचना, इसकी रूपरेखा और इसकी प्रक्रिया क्या है? पीपीपी पर राष्ट्रीय और अंतर्राष्ट्रीय वेबसाइटों को साझा करके पाठ्यक्रम का समापन होता है।
+                    बुनियादी ढांचा परियोजनाओं के लिए पीपीपी पर इस ऑनलाइन पाठ्यक्रम में तीन मॉड्यूल शामिल हैं:
+                    (i) इन्फ्रास्ट्रक्चर एक परिचय
+                    (ii) इंफ्रास्ट्रक्चर फाइनेंसिंग
+                    (iii) बुनियादी ढांचा परियोजनाओं के लिए पीपीपी
+                    प्रत्येक मॉड्यूल में अच्छी तरह से परिभाषित उद्देश्य होते हैं और मॉड्यूल से सीखना होता है। प्रत्येक मॉड्यूल में वॉच, थिंक, डू, एक्सप्लोर और टेस्ट के तत्व अंतर्निहित हैं। पाठ्यक्रम से सीखने के स्तर का आकलन करने के लिए एक मूल्यांकन पाठ्यक्रम के अंत में उपलब्ध है।
+                    लक्षित दर्शक: यह पाठ्यक्रम उन अधिकारियों के लिए डिज़ाइन किया गया है जो बुनियादी ढांचे पर अपने ज्ञान को फिर से भरने के लिए रुचि रखते हैं या बुनियादी ढांचे के बारे में जानने के लिए उत्सुक हैं, यह जानने के लिए कि विभिन्न स्तरों की सरकारों द्वारा बुनियादी ढांचे के विकास और प्रबंधन के लिए धन और नवीनतम तकनीकी जानकारी कैसे व्यवस्थित की जाती है, जो अब, प्रदाताओं की अपनी पिछली भूमिका के बजाय एक सूत्रधार की भूमिका निभा रहे हैं।
                       </p>
-                    <div class="dureation">Learning Hours : <span>43m 19s</span></div>
+                    <div class="dureation">सीखने की अवधि : <span>43 मिनट 19 सेकंड</span></div>
                   </div>
                 </div>
               </a>
@@ -715,7 +719,7 @@
                 <div class="igot-display"><img src="img/ntpctechnologies.jpeg" alt="  A Course on Environmental Social and Governance   course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -732,10 +736,10 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">   A Course on Environmental Social and Governance   </h2>
-                    <p>   A Course on Environmental Social and Governance  
+                    <h2 class="h6 mb-2">   पर्यावरण सामाजिक और शासन पर एक पाठ्यक्रम   </h2>
+                    <p>   पर्यावरण सामाजिक और शासन पर एक पाठ्यक्रम  
                       </p>
-                    <div class="dureation">Learning Hours : <span>1h 2m</span></div>
+                    <div class="dureation">सीखने की अवधि : <span>1 घंटा 2 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -745,7 +749,7 @@
                 <div class="igot-display"><img src="img/codeconduct.jpeg" alt=" Code of Conduct for Government Employees  course"></div>
                 <div class="igot-courseContent">
                   <div class="c-score d-flex align-items-center mb-2">
-                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> Course</div>
+                    <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> कोर्स</div>
                   <!-- <div class="c-star me-auto">
                     <i class="fa-sharp fa-solid fa-star"></i>
                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -762,9 +766,9 @@
                     </div> -->
                   </div>
                   <div class="courseDetails">
-                    <h2 class="h6 mb-2">  Code of Conduct for Government Employees  </h2>
-                    <p>  Welcome to the course on Code of Conduct for Government Employees  </p>
-                    <div class="dureation">Learning Hours : <span>24m</span></div>
+                    <h2 class="h6 mb-2">  सरकारी कर्मचारियों के लिए आचार संहिता  </h2>
+                    <p> सरकारी कर्मचारियों के लिए आचार संहिता पर पाठ्यक्रम में आपका स्वागत है  </p>
+                    <div class="dureation">सीखने की अवधि : <span>24 मिनट</span></div>
                   </div>
                 </div>
               </a>
@@ -780,12 +784,12 @@
   </div>
 </section>
 <!-- end here -->
-<section class="igotVision mb-5 mt-5 pt-4 pb-2">
+<section class="igotVision mb-5 pb-2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10">
         <div class="visionIll mt-2">
-          <img src="img/visionImg.svg" alt="How does the platform enable you to become the best version of yourself?">
+          <img src="img/visionImg-hindi.svg" alt="How does the platform enable you to become the best version of yourself?">
         </div>
         <div class="igotVideoGallery">
           <div class="row">
@@ -795,7 +799,7 @@
                   <source src="img/Sanjeev-final.mp4" type="video/mp4">
                   </video>
                 </div>
-                <div class="tagLine">A <span>newly</span> recruited civil servant</div>
+                <div class="tagLine">एक <span>नव</span> नियुक्त सिविल सेवक</div>
               </div>
               <div class="col-md-6">
                 <div class="exCivilVideo">
@@ -803,7 +807,7 @@
                     <source src="img/Shilpa-final.mp4" type="video/mp4">
                     </video>
                   </div>
-                  <div class="tagLine">An <span>experienced</span> civil servant</div>
+                  <div class="tagLine">एक <span>अनुभवी</span> सिविल सेवक</div>
                 </div>
               </div>
             </div>
@@ -812,24 +816,24 @@
         </div>
       </div>
     </section>
-    <section class="igotRegister mt-0 mt-md-5">
+    <section class="igotRegister mt-0 mt-md-2">
       <div class="strip"></div>
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-lg-4">
             <div class="igot-title">
-              <h2 class="h2"><span>Take the</span> <span>first step</span> toward learning</h2>
-              <div class="registerLink"><a id="registerLink1" href="/public/signup" class="custom-btn">Register Now</a></div>
+              <h2 class="h2"><span>सीखने की </span> <span>दिशा में </span> पहला कदम बढ़ाएँ</h2>
+              <div class="registerLink"><a href="public/signup" class="custom-btn">अभी रजिस्टर करें</a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="igotHub mt-5 pt-2">
+    <section class="igotHub mt-2 pt-2">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="h2 text-center mb-5 pb-2">Solutioning space <span class="d-block">for all of Government</span></h2>
+            <h2 class="h2 text-center mb-5 pb-2">सभी सरकारी महकमों के लिए <span class="d-block"> समाधान स्थान </span></h2>
           </div>
           <div class="igotHubCtg">
             <div class="row">
@@ -837,10 +841,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Learning hub"></div>
-                      <h3 class="h4">Learning hub</h3>  
+                      <div class=""><img src="img/school.svg" alt="Learning hub"></div>
+                      <h3 class="h4">सीखने का केंद्र</h3>  
                     </div>
-                    <p>Learn anywhere, anytime and bridge your competency gaps using impactful and engaging learning content.</p>
+                    <p>एक प्रभावशाली और सहभागितापूर्ण शिक्षण सामग्री का उपयोग करके कहीं भी, कभी भी सीखें और अपनी दक्षता में अंतराल को भरें.</p>
                   </div>
 
 
@@ -850,10 +854,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Discussion hub"></div>
-                      <h3 class="h4">Discussion hub</h3>  
+                      <div class=""><img src="img/forum.svg" alt="Discussion hub"></div>
+                      <h3 class="h4">चर्चा केंद्र</h3>  
                     </div>
-                    <p>Discuss and learn with peers, colleagues, civil servants and experts across the country.</p>
+                    <p>देश भर के साथियों, सहकर्मियों,सिविल सेवकों और विशेषज्ञों के साथ चर्चा करें और सीखें.</p>
                   </div>
 
 
@@ -863,10 +867,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Network hub"></div>
-                      <h3 class="h4">Network hub</h3>  
+                      <div class=""><img src="img/group.svg" alt="Network hub"></div>
+                      <h3 class="h4">नेटवर्क केंद्र</h3>  
                     </div>
-                    <p>Connect with civil servants across the country. Grow your network within government circles.</p>
+                    <p>देश भर के सिविल सेवकों से जुड़ें । सरकारी महकमों में अपना नेटवर्क बढ़ाएँ.</p>
                   </div>
 
 
@@ -876,10 +880,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Competency hub"></div>
-                      <h3 class="h4">Competency hub</h3>  
+                      <div class=""><img src="img/extension.svg" alt="Competency hub"></div>
+                      <h3 class="h4">दक्षता केंद्र</h3>  
                     </div>
-                    <p>Identify your competency requirements, competency gaps, so you can grow faster in the right direction.</p>
+                    <p>अपनी दक्षता आवश्यकताओं और दक्षता में अंतराल को पहचानें, ताकि आप सही दिशा में तेजी से बढ़ सकें.</p>
                   </div>
 
 
@@ -889,10 +893,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Career hub"></div>
-                      <h3 class="h4">Career hub</h3>  
+                      <div class=""><img src="img/work.svg" alt="Career hub"></div>
+                      <h3 class="h4">करियर केंद्र</h3>  
                     </div>
-                    <p>Explore career opportunities across the country and signal your expertise.</p>
+                    <p>देश भर में करियर के अवसर खोजें और अपनी विशेषज्ञता को साझा करें.</p>
                   </div>
 
 
@@ -902,10 +906,10 @@
                 <div class="hubDetails mb-4">
                   <div>
                     <div class="hub-heading d-flex align-items-center">
-                      <div class=""><img src="img/learningIcon.svg" alt="Network hub"></div>
-                      <h3 class="h4">Network hub</h3>  
+                      <div class=""><img src="img/event.svg" alt="Event hub"></div>
+                      <h3 class="h4">आयोजन केंद्र</h3>  
                     </div>
-                    <p>Connect with civil servants across the country. Grow your network within government circles.</p>
+                    <p>समकालिक संवादात्मक अनुभवात्मक और सहकर्मी सीखने को सक्षम करें.</p>
                   </div>
 
 
@@ -927,7 +931,7 @@
                   </video>
                 </div>
               </div>
-              <div class="h1 pt-3 mt-3">A quick<span> walkthrough of</span><span> the iGOT</span><span> Karmayogi</span> Portal</div>
+              <div class="h1 pt-3 mt-3">आईगॉट<span> कर्मयोगी</span><span> पोर्टल का</span><span> त्वरित</span> पूर्वाभ्यास</div>
             </div>
           </div>
         </div>
@@ -1045,37 +1049,39 @@
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a id="learnLink" href="/page/learn" class="f-link">Learn</a></li>
-                  <li><a id="discussLink" href="/app/discussion-forum?page=home" class="f-link">Discuss</a></li>
-                  <li><a id="networkLink" href="/app/network-v2" class="f-link">Network</a></li>
-                  <li><a id="coursesLink" href="/page/learn" class="f-link">Courses</a></li>
+                  <li><a id="learnLink" href="page/learn" class="f-link">सीखें</a></li>
+                  <li><a id="discussLink" href="app/discussion-forum?page=home" class="f-link">चर्चा करना</a></li>
+                  <li><a id="networkLink" href="app/network-v2" class="f-link">नेटवर्क</a></li>
+                  <li><a id="coursesLink" href="page/learn" class="f-link">कोर्स</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a id="careerLink" href="/app/careers/home" class="f-link">Career</a></li>
-                  <li><a id="competenciesLink" href="/app/competencies" class="f-link">Competencies</a></li>
-                  <li><a id="eventsLink" href="/app/event-hub" class="f-link">Events</a></li>
-                  <li><a href="https://karmayogibharat.gov.in/" target="_blank" class="f-link">Media</a></li>
+                  <li><a id="careerLink" href="app/careers/home"  class="f-link">करियर</a></li>
+                  <li><a id="competenciesLink" href="app/competencies" class="f-link">दक्षताएँ</a></li>
+                  <li><a id="eventsLink" href="app/event-hub" class="f-link">आयोजन</a></li>
+                  <li><a href="https://karmayogibharat.gov.in/" target="_blank" class="f-link">मीडिया</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md-3">
               <div class="footerNav">
                 <ul>
-                  <li><a href="https://karmayogibharat.gov.in/programme.php" target="_blank" class="f-link">Mission Karmayogi</a></li>
-                  <li><a href="https://frac-dictionary.igotkarmayogi.gov.in/"  class="f-link">Frac Dictionary</a></li>
-                  <li><a id="faqLink" href="/public/faq" class="f-link">Frequently asked questions</a></li>
-                  <li><a id="contactUsLink" href="/public/contact" class="f-link">Contact Us</a></li>
+                  <li><a href="https://karmayogibharat.gov.in/programme.php" target="_blank" class="f-link">मिशन कर्मयोगी</a></li>
+                  <li><a href="https://frac-dictionary.igotkarmayogi.gov.in/"  class="f-link">भूमिका, गतिविधि और दक्षता (FRAC) शब्दकोष</a></li>
+                  <li><a id="cbcLink" href="https://cbc.gov.in/" class="f-link" target="_blank">क्षमता निर्माण आयोग </a></li>
+                  <li><a id="doptLink" href="https://dopt.gov.in/" class="f-link" target="_blank">कार्मिक और प्रशिक्षण विभाग</a></li>
+                  <li><a id="faqLink" href="public/faq" class="f-link">अधिकतर पूछे जाने वाले प्रश्न</a></li>
+                  <li><a id="contactUsLink" href="public/contact" class="f-link">संपर्क करें</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md-3">
               <!-- <p class="p-color text-uppercase f-14 f-600">Also Available In <a href="" class="btn btn-default btn-lang">हिंदी</a></p> -->
               <div class="footer-social">
-                <p class="p-color text-uppercase f-14 f-600">Follow us</p>
+                <p class="p-color text-uppercase f-14 f-600">हमें फॉलो करें</p>
                 <div class="socialIcon d-flex mb-4 mt-3">
                   <!-- <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a> -->
                   <a href="https://www.linkedin.com/company/karmayogi-bharat/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -1084,7 +1090,7 @@
                   <!-- <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a> -->
 
                 </div>
-                <div class="f-igotLogo"><img src="img/igotLogo.jpg" alt="iGot logo"></div>
+                <!-- <div class="f-igotLogo"><img src="img/igotLogo.jpg" alt="iGot logo"></div> -->
               </div>
 
 
@@ -1094,8 +1100,12 @@
             <div class="col-md-12">
               <hr>
               <div class="copyrightNic d-flex align-items-center">
-                <div class="nicImg me-4"><a href="https://www.nic.in/" target="_blank"><img src="img/nicImg.jpg" alt="National informatics center"></a></div>
-                <p class="f-12 f-500">Copyright © Website content managed by Karmayogi Bharat. All Rights Reserved. platform is designed, developed and hosted by National Informatics Centre, Ministry of Electronics & Information Technology, Government of India.</p>
+                <div class="nicImg me-4">
+                  <a href="" id="copyrightLink" target="_blank">
+                    <img src="img/karmayogiLogo.svg" alt="National informatics center" class="footer-logo" height="30px">
+                  </a>
+                  </div>
+                <p class="f-12 f-500">कॉपीराइट © वेबसाइट कर्मयोगी भारत द्वारा प्रबंधित । सर्वाधिकार सुरक्षित </p>
               </div>
             </div>
           </div>
@@ -1105,6 +1115,8 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-10">
                 <div class="govlogo d-flex flex-wrap flex-md-nowrap justify-content-between ">
+                  <p><a href="https://cbc.gov.in/" target="_blank"><img src="img/cbc.png" alt="CBC logo"></a></p>
+                  <p><a href="https://dopt.gov.in/" target="_blank" class="dopt_link"><img src="img/dopt.png" alt="DOPT logo"></a></p>
                   <p><a href="https://www.mygov.in/" target="_blank"><img src="img/mygov-footer-logo.png" alt="Mygov logo"></a></p>
                   <p><a href="https://data.gov.in/" target="_blank"><img src="img/data-gov-logo.png" alt="Data gov logo"></a></p>
                   <p><a href="https://www.digitalindia.gov.in/" target="_blank"><img src="img/digital-india-logo.png" alt="Digital India logo"></a></p>
@@ -1126,7 +1138,38 @@
 
       </script>
       <script>
+        $(document).ready(function() {
+          $('.igot-courseCarousel').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 0,
+            startPosition: 1, // 1, 2, 3 
+            responsiveClass: true,
+            autoplay: true,
+            smartSpeed: 500,
+            autoplayHoverPause: true,
+            center:true,
+            responsive: {
+             0: {
+              items: 1,
+              nav:true,
+              margin: 10,
+            },
+
+            600: {
+              items: 3,
+              nav:true,
+            }
+          }
+        })
+
+        })
+      </script>
+
+      <script>
         var portalURL= ""
+        var contentBucket = ""
+        var certImage = ""
         var loginPageRedirection = false
         var config= {}
 
@@ -1136,6 +1179,8 @@
             const resJson = await res.json()
             config = resJson
             portalURL = resJson.portalURL || ''
+            contentBucket = resJson.contentBucket || ''
+            certImage = resJson.certImage || ''
             loginPageRedirection = resJson.loginPageRedirection
           }
           await updateLinks()
@@ -1143,6 +1188,32 @@
           // var hostName=window.location.origin.replace('www','portal')
           await fetchCourses(portalURL + '/api/course/v1/explore')
         })
+        function timeConvert(n) {
+            var num = n;
+            var hours = (num / 60);
+            var rhours = Math.floor(hours);
+            var minutes = (hours - rhours) * 60;
+            var rminutes = Math.round(minutes);
+            if (rminutes === 0) {
+              return rhours + "h";
+            }
+            return rhours + "h " + rminutes + "m.";
+          }
+
+
+        function getChangedUrl(url) {
+            if (url && url.length > 0) {
+              const tempData = url.split('content')
+              if (url.indexOf(`/collection`) > 0) {
+                return `${portalURL}${contentBucket}${tempData[tempData.length - 1]}`
+              }
+              if (url.indexOf('/public/content') > 0) {
+                return `${portalURL}${certImage}${tempData[tempData.length - 1]}`
+              }
+              return `${portalURL}${contentBucket}/content${tempData[tempData.length - 1]}`
+            }
+            return url
+          }
 
         async function fetchCourses(url){
           let courses = []
@@ -1165,11 +1236,17 @@
           if(courses.length) {
             for(let i=0; i<courses.length; i++) {
               let c = courses[i]
+              let imagePath = c.appIcon
+              if(c.posterImage) {
+                imagePath = c.posterImage
+              }
+              var imgUrl = getChangedUrl(imagePath)
+               
 
               // content += "<div class=\"item\">" + courses[i].name + "</div>"
               content += `<div class="item">
                             <a href="${portalURL}/public/toc/${c.identifier}/overview">
-                                <div class="igot-display"><img src="${c.posterImage}" alt="${c.name}">
+                                <div class="igot-display"><img src="${imgUrl}" alt="${c.name}">
                                 </div>
                                 <div class="igot-courseContent">
                                     <div class="c-score d-flex align-items-center mb-2">
@@ -1192,7 +1269,7 @@
                                     <div class="courseDetails">
                                         <h2 class="h6 mb-2"> ${c.name} </h2>
                                         <p> ${c.description}</p>
-                                        <div class="dureation">Learning Hours : <span>${c.duration} mins</span></div>
+                                        <div class="dureation">Learning Hours : <span>${timeConvert(c.duration)} mins</span></div>
                                     </div>
                                 </div>
                             </a>
@@ -1202,33 +1279,6 @@
 
           $(".igot-courseCarousel").html(content);
           initilizeCourosel();
-        }
-
-        async function initilizeCourosel() {
-          $('.igot-courseCarousel').owlCarousel({
-              loop: false,
-              rewind: true,
-              nav: true,
-              margin: 0,
-              // startPosition: 1, // 1, 2, 3 
-              responsiveClass: true,
-              autoplay: true,
-              smartSpeed: 500,
-              autoplayHoverPause: true,
-              // center:true,
-              responsive: {
-              0: {
-                items: 1,
-                nav:true,
-                margin: 10,
-              },
-
-              600: {
-                items: 3,
-                nav:true,
-              }
-            }
-          });
         }
 
         async function updateLinks() {
@@ -1244,11 +1294,13 @@
           const eventsLink = document.getElementById('eventsLink')
           const faqLink = document.getElementById('faqLink')
           const contactUsLink = document.getElementById('contactUsLink')
+          const copyrightLink = document.getElementById('copyrightLink')
           appendPortalURLToHref(loginLink)
           appendPortalURLToHref(registerLink)
           appendPortalURLToHref(registerLink1)
           appendPortalURLToHref(faqLink)
           appendPortalURLToHref(contactUsLink)
+          appendPortalURLToHref(copyrightLink)
           // TODO Enable this, when redirection issue resolved
           if(!loginPageRedirection){
             appendPortalURLToHref(learnLink)

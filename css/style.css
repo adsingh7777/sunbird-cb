@@ -100,7 +100,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {font-size: 2.5rem;letter-spacing: -1px;line-height: 1.2;}
 h2, .h2 {font-size: 1.75rem;}
 h4,.h4 {font-size: 1.125rem;}
-h6. .h6 {font-size: .875rem;}
+h5,.h5 {font-size: 1rem; font-weight: 500;}
+h6, .h6 {font-size: .875rem;}
 /* h2, .h2 {font-size: 1.5rem;}
 h3, .h3 {font-size: 1.125rem;}
 h4, .h4 {font-size: 0.875rem;} */
@@ -132,11 +133,20 @@ p{
 .l-color {
     color: #5F7D95 !important;
 }
+.b-color {
+    color: #264092;
+}
+.y-color {
+    color: #EF951E;
+}
 .bg-lightBlue {
-    background-color: #5F7D95 !important;;
+    background-color: #5F7D95 !important;
 }
 .bg-primary {
-    background-color: #374957 !important;;
+    background-color: #374957 !important;
+}
+.bg-white {
+    background-color: #ffffff !important;
 }
 .f-400 {font-weight: 400;}
 .f-500{ font-weight: 500;}
@@ -194,12 +204,12 @@ p{
     font-weight: 600;
 }
 /* button end here */
+
 .igot-menu {
     background-color: transparent!important;
-}
-.igot-menu {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .container{
     max-width: 1180px;
@@ -313,6 +323,7 @@ p{
     border: 1px solid rgba(0,0,0,.08);
     border-radius: .5rem;
     padding: 0.875rem;
+    background-color: #f0f0f0;
 }
 .igotAnalytics  p {
     margin-bottom:0;
@@ -322,6 +333,7 @@ p{
 }
 .igotAnalytics .metrics .scale img {
     width: 100%;
+    height: 85px;
 }
 
 .igotAnalytics .recNo {
@@ -523,7 +535,7 @@ p{
 .igotPortalSection {
     background: url('../img/bg-arrow.svg') no-repeat center top;
     width: 100%;
-    margin: 100px 0;
+    margin: 50px 0;
     background-position-x: 55%;
 }
 .igotPortalSection .videoSlide {
@@ -661,7 +673,13 @@ hr {
     border: 0;
     opacity: 1;
 }
-.copyrightNic {width: 70%; margin: 0 auto; margin-bottom: 1.9rem;}
+.dopt_link {
+    background-color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.copyrightNic {width: 45%; margin: 0 auto; margin-bottom: 1.9rem;}
 .govt-logo {
     background-color: #1B2133;
     height: 90px;
@@ -687,6 +705,15 @@ hr {
     object-fit: cover;
     height: 280px;
     width: 100%;
+}
+
+.hub-heading {
+    margin-bottom: 8px;
+}
+
+.hub-heading img {
+    height: 28px;
+    margin-bottom: 4px;
 }
 
 
@@ -789,6 +816,53 @@ span.navbar-toggler-icon::after {
 
 /* Medium devices (tablets, less than 992px) */
 
+/* public dashboard section start here */
+.dashboardSection,
+.trendlinesSection {
+    background-color: #F8F9FF;
+}
+.form-select {
+    border-radius: .5rem;
+    border-color: #5C6B75;
+    color: #5C6B75;
+    font-size: .875rem;
+}
+.d-metricsColumn {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+}
+.d-metricsColumn .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid transparent;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #EF951E;
+    opacity: .5;
+    min-width: 130px;
+}
+
+.d-metricsColumn .nav-pills .nav-link.active {
+    opacity: 1;
+    border-color: #264092;
+}
+.trendlinesSection {
+    padding:  3rem 0;
+}
+.trendlinesSection .d-metricsColumn {
+    padding: 1.8rem;
+}
+.trendlinesSection .h2 {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* end here */
 @media (max-width: 1200px) {
 .igotAnalytics .metrics {
     min-height: 9.875rem;
@@ -842,6 +916,14 @@ span.navbar-toggler-icon::after {
     position: absolute;
     left: 23px;
     top: 37px;
+}
+.trendlinesSection .d-metricsHeading .h5 {
+    width: 70%;
+}
+.trendlinesSection .d-metricsHeading .cardFilter {
+    width: 30%;
+    display: flex;
+    justify-content: end;
 }
 }
 /* Small devices (landscape phones, less than 768px) */
@@ -1011,6 +1093,9 @@ section#dashboardAnalytics .col-sm-4 {
 }
 .copyrightNic  .nicImg.me-4 {
     width: 100%;
+}
+img.footer-logo{
+    height: 30px;
 }
 .igotAnalyticsMobile .metrics {min-height: auto; padding: 0.75rem;}
 .igotAnalyticsMobile .metrics .scale {display: none;}

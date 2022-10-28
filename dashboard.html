@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome js -->
+  <link href="css/all.min.css" rel="stylesheet">
+  <!-- Owl carousel items CSS -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style CSS -->
+  <link href="css/style.css" rel="stylesheet">    
+
+  <title>iGOT</title>
+</head>
+<body>
+  <header class="header">
+    <div class="tpHead">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-8">
+            <div class="flag f-10">
+              <img class="px-1" src="img/flag.svg" alt="Indian flag icon">WELCOME TO iGOT KARMAYOGI
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="socialIcon d-flex justify-content-end">
+              <!-- <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a> -->
+              <a href="https://www.linkedin.com/company/karmayogi-bharat/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/CeoKarmayogi" target="_blank" class="icon"><i class="fa-brands fa-twitter"></i></a>
+              <!-- <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md  igot-menu" aria-label="Third navbar example">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/karmayogiLogo.svg" alt="karmayogi bharat logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKarmayogi" aria-controls="navbarKarmayogi" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarKarmayogi">
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#dashboardAnalytics">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#igotcourses">Courses</a>
+            </li>
+          </ul>
+          <form role="search">
+            <!-- <input class="form-control" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
+          </form>
+          <div class="register d-flex">
+            <div class="logIn mx-2"><a id="loginLink" href="protected/v8/resource" class="btn btn-default">Login</a></div>
+            <div class="signUp"><a id="registerLink" href="public/signup" class="btn btn-primary">Register</a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Igot public dashboard section start here -->
+  <section class="dashboardSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="dashboardAnalytics">
+            <!-- <div class="sortby my-4 ps-2 d-flex justify-content-end">
+              <div class="custom-select  ">
+                <select class="form-select" aria-label="Default select example">
+                  
+                  <option selected value="1">Weekly</option>
+                  <option value="2">Monthly</option>
+                  <option value="3">Yearly</option>
+                </select>
+            </div>
+
+          </div> -->
+          <div class="d-metricsSection mt-4">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="d-metricsColumn mb-4 mb-md-0">
+                  <div class="d-metricsHeading  d-flex justify-content-between">
+                    <h2 class="h4 mb-3 f-600">Users metrics</h2>
+
+                    <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-metricsTab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-learners-tab" data-bs-toggle="pill" data-bs-target="#pills-learners" type="button" role="tab" aria-controls="pills-learners" aria-selected="true">10 Lakh 
+                          <span class="d-block d-block f-12 p-color f-400">Learners</span></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-register-tab" data-bs-toggle="pill" data-bs-target="#pills-register" type="button" role="tab" aria-controls="pills-register" aria-selected="false">05 Lakh 
+                          <span class="d-block f-12 p-color f-400"> Registered Karmayogies</span></button>
+                      </li>
+                     
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-learners" role="tabpanel" aria-labelledby="pills-learners-tab">
+                        <h6 class="f-500 mb-2 pt-1">Learners</h6>
+                        <div class="metricsChart">
+                          <img src="img/l-chart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12 pr-2"></i> Learners
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                        <h6 class="f-500 mb-2 pt-1">Registered Karmayogies</h6>
+                        <div class="metricsChart">
+                          <img src="img/registerChart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12"></i> Registered Karmayogies
+                        </div>
+                      </div>
+                    </div>
+                    
+                     
+                    </div>
+                    
+                  </div>
+                
+                </div>
+                <div class="col-md-6 col-lg-4">
+                <div class="d-metricsColumn mb-4 mb-md-0">
+                  <div class="d-metricsHeading  d-flex justify-content-between">
+                    <h2 class="h4 mb-3 f-600">Learning content</h2>
+                     <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-metricsTab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-courses-tab" data-bs-toggle="pill" data-bs-target="#pills-courses" type="button" role="tab" aria-controls="pills-courses" aria-selected="true">1000+ 
+                          <span class="d-block d-block f-12 p-color f-400">Courses</span></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-learning-tab" data-bs-toggle="pill" data-bs-target="#pills-learning" type="button" role="tab" aria-controls="pills-learning" aria-selected="false">10 lakh 
+                          <span class="d-block f-12 p-color f-400">Learning resources</span></button>
+                      </li>
+                     
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
+                        <h6 class="f-500 mb-2 pt-1">Courses</h6>
+                        <div class="metricsChart">
+                          <img src="img/l-chart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12 pr-2"></i> Courses
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-learning" role="tabpanel" aria-labelledby="pills-learning-tab">
+                        <h6 class="f-500 mb-2 pt-1">Learning resources</h6>
+                        <div class="metricsChart">
+                          <img src="img/l-chart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12"></i> Learning resources
+                        </div>
+                      </div>
+                    </div>
+                    
+                     
+                    </div>
+                    
+                  </div>
+                
+                </div>
+                <div class="col-md-6 col-lg-4 mt-0">
+                <div class="d-metricsColumn">
+                  <div class="d-metricsHeading  d-flex justify-content-between">
+                    <h2 class="h4 mb-3 f-600">Engagement</h2>
+                     <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-metricsTab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-coursesView-tab" data-bs-toggle="pill" data-bs-target="#pills-coursesView" type="button" role="tab" aria-controls="pills-coursesView" aria-selected="true">80 crore
+                          <span class="d-block d-block f-12 p-color f-400">Course view</span></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-time-tab" data-bs-toggle="pill" data-bs-target="#pills-time" type="button" role="tab" aria-controls="pills-time" aria-selected="false">800 crore
+                          <span class="d-block f-12 p-color f-400">Time spent (in mins)</span></button>
+                      </li>
+                     
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-coursesView" role="tabpanel" aria-labelledby="pills-coursesView-tab">
+                        <h6 class="f-500 mb-2 pt-1">Course view</h6>
+                        <div class="metricsChart">
+                          <img src="img/l-chart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12 pr-2"></i> Course view
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
+                        <h6 class="f-500 mb-2 pt-1">Time spent (in mins)</h6>
+                        <div class="metricsChart">
+                          <img src="img/l-chart.svg" alt="Learners chart here">
+                        </div>
+                        <div class="d-tabChart text-center  p-color f-10 mt-4">
+                          <i class="fa-sharp fa-solid fa-square b-color f-12"></i> Time spent (in mins)
+                        </div>
+                      </div>
+                    </div>
+                    
+                     
+                    </div>
+                    
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  </section>
+<!-- end here -->
+<section class="trendlinesSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="h2 mb-4">Trendlines</h2>
+      </div>
+      <div class="col-md-6">
+        <div class="d-metricsColumn newRegister">
+          <div class="d-metricsHeading mb-5  d-flex justify-content-between">
+            <h2 class="h5 f-600">New registrations on the platform</h2>
+            <div class="cardFilter">
+               <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- <a href="info" class=""><img src="img/fullscreen.svg" alt="full screen icon"></a>
+              <a href="info"><img src="img/more.svg" alt="full screen icon"></a> -->
+            </div>
+
+          </div>
+          <div class="d-metricsTab trendlinesTab">
+            <div class="metricsChart">
+              <img src="img/newRegisterChart.svg" alt="Learners chart here">
+            </div>  
+
+            
+           <div class="d-tabChart text-center p-color f-10 mt-4">
+              <i class="fa-sharp fa-solid fa-square y-color f-12"></i> New registrations
+            </div>  
+          </div>
+            
+          </div>
+        
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+        <div class="d-metricsColumn minuteLearning">
+          <div class="d-metricsHeading mb-5  d-flex justify-content-between">
+            <h2 class="h5 f-600">Minutes of learning consumed</h2>
+            <div class="cardFilter">
+               <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- <a href="info" class=""><img src="img/fullscreen.svg" alt="full screen icon"></a>
+              <a href="info"><img src="img/more.svg" alt="full screen icon"></a> -->
+            </div>
+
+          </div>
+          <div class="d-metricsTab trendlinesTab">
+            <div class="metricsChart">
+              <img src="img/minutesLearningChart.svg" alt="Minutes of learning chart">
+            </div>  
+
+            
+           <div class="d-tabChart text-center p-color f-10 mt-4">
+              <i class="fa-sharp fa-solid fa-square p-color f-12"></i> Minutes of learning
+            </div>  
+          </div>
+            
+          </div>
+        
+        </div>
+        <div class="col-md-6 mt-4">
+        <div class="d-metricsColumn completedCourse">
+          <div class="d-metricsHeading mb-5  d-flex justify-content-between">
+            <h2 class="h5 f-600">Number of completed courses</h2>
+            <div class="cardFilter">
+               <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- <a href="info" class=""><img src="img/fullscreen.svg" alt="full screen icon"></a>
+              <a href="info"><img src="img/more.svg" alt="full screen icon"></a> -->
+            </div>
+
+          </div>
+          <div class="d-metricsTab trendlinesTab">
+            <div class="metricsChart">
+              <img src="img/completedCourseChart.svg" alt="Number of completed courses">
+            </div>  
+
+            
+           <div class="d-tabChart text-center p-color f-10 mt-4">
+              <i class="fa-sharp fa-solid fa-square p-color f-12"></i> New registrations
+            </div>  
+          </div>
+            
+          </div>
+        
+        </div>
+        <div class="col-md-6 mt-4">
+        <div class="d-metricsColumn newRegister">
+          <div class="d-metricsHeading mb-5  d-flex justify-content-between">
+            <h2 class="h5 f-600">Number of resources viewed</h2>
+            <div class="cardFilter">
+               <a href="info" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon_info.svg" alt="information icon"></a>
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="myModal" data-controls-modal="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <!-- <a href="info" class=""><img src="img/fullscreen.svg" alt="full screen icon"></a>
+              <a href="info"><img src="img/more.svg" alt="full screen icon"></a> -->
+            </div>
+
+          </div>
+          <div class="d-metricsTab trendlinesTab">
+            <div class="metricsChart">
+              <img src="img/resourceViewChart.svg" alt="Number of resources viewed">
+            </div>  
+
+            
+           <div class="d-tabChart text-center p-color f-10 mt-4">
+              <i class="fa-sharp fa-solid fa-square y-color f-12"></i> New registrations
+            </div>  
+          </div>
+            
+          </div>
+        
+        </div>
+    </div>
+  </div>
+</section>
+
+  
+      <footer class="footer mt-auto bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footerNav">
+                <ul>
+                  <li><a id="learnLink" href="page/learn" class="f-link">Learn</a></li>
+                  <li><a id="discussLink" href="app/discussion-forum?page=home" class="f-link">Discuss</a></li>
+                  <li><a id="networkLink" href="app/network-v2" class="f-link">Network</a></li>
+                  <li><a id="coursesLink" href="page/learn" class="f-link">Courses</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footerNav">
+                <ul>
+                  <li><a id="careerLink" href="app/careers/home" class="f-link">Career</a></li>
+                  <li><a id="competenciesLink" href="app/competencies" class="f-link">Competencies</a></li>
+                  <li><a id="eventsLink" href="app/event-hub" class="f-link">Events</a></li>
+                  <li><a href="https://karmayogibharat.gov.in/" target="_blank" class="f-link">Media</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footerNav">
+                <ul>
+                  <li><a href="https://karmayogibharat.gov.in/programme.php" target="_blank" class="f-link">Mission Karmayogi</a></li>
+                  <li><a href="https://frac-dictionary.igotkarmayogi.gov.in/"  class="f-link">Frac Dictionary</a></li>
+                  <li><a id="cbcLink" href="https://cbc.gov.in/" class="f-link">CBC</a></li>
+                  <li><a id="doptLink" href="https://dopt.gov.in/" class="f-link">Dopt</a></li>
+                
+                  <li><a id="faqLink" href="public/faq" class="f-link">Frequently asked questions</a></li>
+                  <li><a id="contactUsLink" href="public/contact" class="f-link">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <!-- <p class="p-color text-uppercase f-14 f-600">Also Available In <a href="" class="btn btn-default btn-lang">हिंदी</a></p> -->
+              <div class="footer-social">
+                <p class="p-color text-uppercase f-14 f-600">Follow us</p>
+                <div class="socialIcon d-flex mb-4 mt-3">
+                  <!-- <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a> -->
+                  <a href="https://www.linkedin.com/company/karmayogi-bharat/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://twitter.com/CeoKarmayogi" target="_blank" class="icon"><i class="fa-brands fa-twitter"></i></a>
+
+                  <!-- <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a> -->
+
+                </div>
+                <!-- <div class="f-igotLogo"><img src="img/igotLogo.jpg" alt="iGot logo"></div> -->
+              </div>
+
+
+
+
+            </div>
+            <div class="col-md-12">
+              <hr>
+              <div class="copyrightNic d-flex align-items-center">
+                <div class="nicImg me-4">
+                  <a href="" id="copyrightLink" target="_blank">
+                    <img src="img/karmayogiLogo.svg" alt="National informatics center" class="footer-logo" height="30px">
+                  </a>
+                </div>
+                <p class="f-12 f-500">Copyright © Website managed by Karmayogi Bharat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="govt-logo">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-10">
+                <div class="govlogo d-flex flex-wrap flex-md-nowrap justify-content-between ">
+                  <p><a href="https://cbc.gov.in/" target="_blank"><img src="img/cbc.png" alt="CBC logo"></a></p>
+                  <p><a href="https://dopt.gov.in/" target="_blank" class="dopt_link"><img src="img/dopt.png" alt="DOPT logo"></a></p>
+                  <p><a href="https://www.mygov.in/" target="_blank"><img src="img/mygov-footer-logo.png" alt="Mygov logo"></a></p>
+                  <p><a href="https://data.gov.in/" target="_blank"><img src="img/data-gov-logo.png" alt="Data gov logo"></a></p>
+                  <p><a href="https://www.digitalindia.gov.in/" target="_blank"><img src="img/digital-india-logo.png" alt="Digital India logo"></a></p>
+
+                  <p><a href="https://www.meity.gov.in/ " target="_blank"><img src="img/Meity_logo.png" alt="Meity logo"></a></p>
+                  <p><a href="https://www.pmindia.gov.in/en/" target="_blank"><img src="img/pm-india-logo.png" alt="PM india logo"></a></p>
+                  <p><a href="https://www.india.gov.in/" target="_blank"><img src="img/india-gov-logo.png" alt="India gov logo"></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script>
+
+      </script>
+
+      <script>
+        var portalURL= ""
+        var contentBucket = ""
+        var certImage = ""
+        var loginPageRedirection = false
+        var config= {}
+
+        $(document).ready(async function() {
+          const res = await fetch('./configurations.json')
+          if(res) {
+            const resJson = await res.json()
+            config = resJson
+            portalURL = resJson.portalURL || ''
+            contentBucket = resJson.contentBucket || ''
+            certImage = resJson.certImage || ''
+            loginPageRedirection = resJson.loginPageRedirection
+          }
+          await updateLinks()
+          await updateDashboardCounters()
+          // var hostName=window.location.origin.replace('www','portal')
+          await fetchCourses(portalURL + '/api/course/v1/explore')
+        })
+
+        function getChangedUrl(url) {
+            if (url && url.length > 0) {
+              const tempData = url.split('content')
+              if (url.indexOf(`/collection`) > 0) {
+                return `${portalURL}${contentBucket}${tempData[tempData.length - 1]}`
+              }
+              if (url.indexOf('/public/content') > 0) {
+                return `${portalURL}${certImage}${tempData[tempData.length - 1]}`
+              }
+              return `${portalURL}${contentBucket}/content${tempData[tempData.length - 1]}`
+            }
+            return url
+          }
+
+        async function fetchCourses(url){
+          let courses = []
+          let content=''
+          const response = await fetch(url)
+          const {result} = await response.json()
+          if(result && result.content && result.content.length) {
+            courses = result.content
+          }
+
+          //resize event was triggering an error, this if statement is to go around it
+          if($('.owl-carousel').hasClass('owl-theme')){ 
+            //these 3 lines kill the owl, and returns the markup to the initial state
+            $('.owl-carousel').trigger('destroy.owl.carousel'); 
+            $('.owl-carousel').find('.owl-stage-outer').children().unwrap();
+            $('.owl-carousel').removeClass("owl-center owl-loaded owl-text-select-on");
+          }
+          
+         
+
+          $(".owl-carousel").html('');
+          if(courses.length) {
+            for(let i=0; i<courses.length; i++) {
+              let c = courses[i]
+              let imagePath = c.appIcon
+              if(c.posterImage) {
+                imagePath = c.posterImage
+              } 
+              // let a =  imagePath.split('/')
+              // var imgUrl = `${portalURL}/assets/public/`.concat(a[4]).concat('/').concat(a[5]).concat('/').concat(a[6]).concat('/').concat(a[7])
+              var imgUrl = getChangedUrl(imagePath)
+
+              // content += "<div class=\"item\">" + courses[i].name + "</div>"
+              content += `<div class="item">
+                            <a href="${portalURL}/public/toc/${c.identifier}/overview">
+                                <div class="igot-display"><img src="${imgUrl}" alt="${c.name}">
+                                </div>
+                                <div class="igot-courseContent">
+                                    <div class="c-score d-flex align-items-center mb-2">
+                                        <div class="c-type me-2 p-color"><i class="fa-solid fa-video me-1"></i> ${c.primaryCategory}</div>
+                                        <!-- <div class="c-star me-auto">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <div class="c-share">
+                                    
+                                    <svg class="c-share" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8.49078 4.29287L8.96493 4.26833V3.79354V1.052L15.1933 6.12417L8.96493 11.2117V8.47989V7.95126L8.43712 7.98067C5.19255 8.16143 2.21369 10.1022 0.743144 13.0324L0.736881 13.0449L0.731325 13.0577L0.5 13.591V12.7149C0.5 10.4705 1.37824 8.35633 2.97659 6.75801L2.97659 6.758C4.46981 5.26476 6.41266 4.40044 8.49078 4.29287ZM0.5 14.8474L1.19003 13.2567L0.5 14.8474Z" fill="" stroke=""/>
+                                    </svg>
+                                
+                                    </div> -->
+                                    </div>
+                                    <div class="courseDetails">
+                                        <h2 class="h6 mb-2"> ${c.name} </h2>
+                                        <p> ${c.description}</p>
+                                        <div class="dureation">Learning Hours : <span>${c.duration} mins</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`
+            }
+          }
+
+          $(".igot-courseCarousel").html(content);
+          initilizeCourosel();
+        }
+
+        async function initilizeCourosel() {
+          $('.igot-courseCarousel').owlCarousel({
+              loop: false,
+              rewind: true,
+              nav: true,
+              margin: 0,
+              // startPosition: 1, // 1, 2, 3 
+              responsiveClass: true,
+              autoplay: true,
+              smartSpeed: 500,
+              autoplayHoverPause: true,
+              // center:true,
+              responsive: {
+              0: {
+                items: 1,
+                nav:true,
+                margin: 10,
+              },
+
+              600: {
+                items: 3,
+                nav:true,
+              }
+            }
+          });
+        }
+
+        async function updateLinks() {
+          const loginLink = document.getElementById('loginLink')
+          const registerLink = document.getElementById('registerLink')
+          const registerLink1 = document.getElementById('registerLink1')
+          const learnLink = document.getElementById('learnLink')
+          const discussLink = document.getElementById('discussLink')
+          const networkLink = document.getElementById('networkLink')
+          const coursesLink = document.getElementById('coursesLink')
+          const careerLink = document.getElementById('careerLink')
+          const competenciesLink = document.getElementById('competenciesLink')
+          const eventsLink = document.getElementById('eventsLink')
+          const faqLink = document.getElementById('faqLink')
+          const contactUsLink = document.getElementById('contactUsLink')
+          const copyrightLink = document.getElementById('copyrightLink')
+          appendPortalURLToHref(loginLink)
+          appendPortalURLToHref(registerLink)
+          appendPortalURLToHref(registerLink1)
+          appendPortalURLToHref(faqLink)
+          appendPortalURLToHref(contactUsLink)
+          appendPortalURLToHref(copyrightLink)
+          // TODO Enable this, when redirection issue resolved
+          if(!loginPageRedirection){
+            appendPortalURLToHref(learnLink)
+            appendPortalURLToHref(discussLink)
+            appendPortalURLToHref(networkLink)
+            appendPortalURLToHref(coursesLink)
+            appendPortalURLToHref(careerLink)
+            appendPortalURLToHref(competenciesLink)
+            appendPortalURLToHref(eventsLink)
+          } else {
+            // TODO Enable this, when redirection issue resolved
+            appendLoginURLToHref(learnLink)
+            appendLoginURLToHref(discussLink)
+            appendLoginURLToHref(networkLink)
+            appendLoginURLToHref(coursesLink)
+            appendLoginURLToHref(careerLink)
+            appendLoginURLToHref(competenciesLink)
+            appendLoginURLToHref(eventsLink)
+          }
+
+        }
+
+        async function updateDashboardCounters() {
+          document.getElementById('learners').innerHTML = config.learners || 0
+          document.getElementById('registeredKarmayogies').innerHTML = config.registeredKarmayogies || 0
+          document.getElementById('courses').innerHTML = config.courses || 0
+          document.getElementById('availableContent').innerHTML = config.availableContent || 0
+          document.getElementById('courseViews').innerHTML = config.courseViews || 0
+          document.getElementById('minutesSpent').innerHTML = config.minutesSpent || 0
+        }
+
+        async function appendPortalURLToHref(element){
+          const oldhref = element.getAttribute("href")
+            element.setAttribute("href", `${portalURL}${oldhref}`);
+        }
+
+        // TODO: Remove this method, once redirection links for hubs is fixed,
+        //  This is a quick fix for urgent deployment
+        async function appendLoginURLToHref(element) {
+          element.setAttribute("href", `${portalURL}/protected/v8/resource`);
+        }
+
+      </script>
+
+
+    </body>
+    </html>
