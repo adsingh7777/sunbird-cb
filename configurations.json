@@ -1,12 +1,12 @@
 {
     "portalURL": "https://portal.igotkarmayogi.gov.in/",
     "loginPageRedirection": false,
-    "karmayogiOnboarded": "148980",
-    "registeredMdo": "726",
-    "courses": "283",
-    "availableContent": "40278",
-    "courseEnrollments": "5104",
-    "activeUsers": "61",
+    "karmayogiOnboarded": "147705",
+    "registeredMdo": "617",
+    "courses": "282",
+    "availableContent": "40156",
+    "courseEnrollments": "4166",
+    "activeUsers": "1200000",
     "contentBucket": "assets/public",
     "certImage": "assets/certimage/content"
 }

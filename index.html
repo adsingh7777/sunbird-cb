@@ -38,9 +38,23 @@
         </div>
       </div>
     </div>
+    <!-- <div class="mobile-signup"> 
+      <div class="register d-flex mobile-signup-inner">
+        <div class="logIn mx-2"><a id="loginLink" href="protected/v8/resource" class="btn btn-default">Login</a></div>
+        <div class="signUp"><a id="registerLink" href="public/signup" class="btn btn-primary">Register</a></div>
+      </div>
+    </div> -->
     <nav class="navbar navbar-expand-md  igot-menu" aria-label="Third navbar example">
-      <div class="container">
+      <div class="container d-flex flex-row">
         <a class="navbar-brand" href="#"><img src="img/karmayogiLogo.svg" alt="karmayogi bharat logo"></a>
+      
+        <div class="mobile-signup" id="small-screen-signup"> 
+          <div class="register d-flex mobile-signup-inner">
+            <div class="logIn mx-2"><a id="loginLink" href="protected/v8/resource" class="btn btn-default">Login</a></div>
+            <div class="signUp"><a id="registerLink" href="public/signup" class="btn btn-primary">Register</a></div>
+          </div>
+        </div>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKarmayogi" aria-controls="navbarKarmayogi" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
@@ -63,7 +77,7 @@
             <!-- <input class="form-control" type="search" placeholder="Search" aria-label="Search"> -->
             <!-- <div class="search me-2"><img src="img/searchIcon.svg" alt="search icon here"></div> -->
           </form>
-          <div class="register d-flex">
+          <div class="register d-flex" id="desktop-signup">
             <div class="logIn mx-2"><a id="loginLink" href="protected/v8/resource" class="btn btn-default">Login</a></div>
             <div class="signUp"><a id="registerLink" href="public/signup" class="btn btn-primary">Register</a></div>
           </div>
@@ -109,10 +123,10 @@
   </section>
   <section id="dashboardAnalytics" class="section igotAnalytics pt-4 pt-md-5">
     <div class="container">
-      <div class="row d-md-flex justify-content-center">
-        <div class="col-md-12 col-lg-10">
+      <!-- <div class="row d-md-flex justify-content-center">
+        <div class="col-md-12 col-lg-10"> -->
           <div class="row d-flex igotAnalyticsMobile">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="row">
                 <div class="col-md-12">
                   <p class="mb-2 mb-md-3">Number of users/MDO's</p>
@@ -138,7 +152,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="row">
                 <div class="col-md-12">
                   <p class="mb-2 mb-md-3">Available content </p>
@@ -198,8 +212,8 @@
         
         
 
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
   </div>
 </section>
 <!-- Features course section start here -->
@@ -1111,8 +1125,8 @@
         <div class="govt-logo">
           <div class="container">
             <div class="row d-flex justify-content-center">
-              <div class="col-md-10">
-                <div class="govlogo d-flex flex-wrap flex-md-nowrap justify-content-between ">
+              <div class="col-lg-12 col-md-12">
+                <div class="govlogo d-flex flex-wrap justify-content-between ">
                   <p><a href="https://cbc.gov.in/" target="_blank"><img src="img/cbc.png" alt="CBC logo"></a></p>
                   <p><a href="https://dopt.gov.in/" target="_blank" class="dopt_link"><img src="img/dopt.png" alt="DOPT logo"></a></p>
                   
@@ -1160,12 +1174,14 @@
         })
         function timeConvert(n) {
             var num = n;
-            var hours = (num / 60);
+            var hours = (num / 3600);
             var rhours = Math.floor(hours);
             var minutes = (hours - rhours) * 60;
             var rminutes = Math.round(minutes);
             if (rminutes === 0) {
               return rhours + "h";
+            } else if(rhours === 0) {
+              return rminutes + "m."
             }
             return rhours + "h " + rminutes + "m.";
           }

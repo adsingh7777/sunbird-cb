@@ -22,7 +22,7 @@ html,
 body {
     max-width: 100%;
     font-size: 16px;
-
+    overflow-x: hidden!important;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -682,16 +682,19 @@ hr {
 .copyrightNic {width: 45%; margin: 0 auto; margin-bottom: 1.9rem;}
 .govt-logo {
     background-color: #1B2133;
-    height: 90px;
+    height: auto;
+    padding: 1.5rem 0;
+    /* height: 90px; */
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
 .govlogo p {
-    padding: 0 1.4rem
+    padding: 0.8rem 1.2rem;
+    width: 25%;
 }
 .govlogo.d-flex img {
-    max-height: 36px;
+    max-height: 2rem;
 }
 .exCivilVideo {
     display: flex;
@@ -832,6 +835,7 @@ span.navbar-toggler-icon::after {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+    box-sizing: border-box;
 }
 .d-metricsColumn .nav-pills .nav-link {
     background: 0 0;
@@ -862,10 +866,26 @@ span.navbar-toggler-icon::after {
     font-weight: 500;
 }
 
+#small-screen-signup {
+    display: none;
+}
+
+/* end here */
+@media (max-width: 1440px) {
+    /* .govlogo p {
+        padding: 0;
+    } */
+    /* .govlogo.d-flex img {
+        max-height: 28px;
+    } */
+} 
+
 /* end here */
 @media (max-width: 1200px) {
 .igotAnalytics .metrics {
-    min-height: 9.875rem;
+    /* min-height: 9.875rem; */
+    height: 11rem;
+    min-height: 10rem;
 }
 }
 @media (max-width: 1024px) {
@@ -878,7 +898,18 @@ span.navbar-toggler-icon::after {
 @media (max-width: 768px) {
  .header .navbar-brand img {
     height: 54px;
+    /* height: 36px; */
 }
+.govlogo p {
+    width: 24%;
+}
+.govlogo.d-flex img {
+    padding: 0.2rem 0;
+}
+#desktop-signup {
+    display: flex;
+}
+
 .igot-menu .navbar-nav .nav-link {
     font-size: 0.9375rem;
 }
@@ -997,10 +1028,7 @@ span.navbar-toggler-icon::after {
     height: auto;
     padding: 30px 0px;
 }
-.govlogo p {
-    margin-bottom: 0;
-    padding: 10px;
-}
+
 /* .igotCourses {
 max-width: 360px;
 
@@ -1097,7 +1125,7 @@ section#dashboardAnalytics .col-sm-4 {
 img.footer-logo{
     height: 30px;
 }
-.igotAnalyticsMobile .metrics {min-height: auto; padding: 0.75rem;}
+.igotAnalyticsMobile .metrics {height:5.5rem; padding: 0.75rem; box-sizing: border-box;min-height: 5.5rem;}
 .igotAnalyticsMobile .metrics .scale {display: none;}
 .igotAnalyticsMobile .row {
     --bs-gutter-x: 1rem;
@@ -1106,10 +1134,53 @@ img.footer-logo{
 .igotAnalytics p {
     font-size: .75rem;
 }
+/* .govlogo p {
+    width: 24%;
+} */
 }
 
-@media (max-width: 320px) {
 
+
+@media (max-width: 568px) {
+    .header .navbar-brand img {
+       /* height: 54px; */
+       height: 32px;
+   }
+   #desktop-signup {
+    display: none!important;
+}
+.govt-logo {
+    padding: 1rem 0;
+}
+#small-screen-signup {
+    display: flex;
+    margin-right: 0.5rem;
+}
+   .btn {
+       min-width: 4.5rem;
+       padding: 0.4rem;
+       font-size: 0.75rem;
+       margin-top: 4px;
+   }
+
+   .govlogo p {
+    width: 50%;
+    text-align: left;
+    padding: 0.5rem 0;
+   }
+}
+
+@media (max-width: 322px) {
+    .header .navbar-brand img {
+        height: 28px;
+    }
+    .btn {
+        min-width: 4rem;
+        font-size: 0.6rem;
+    }
+    .igot-menu .navbar-toggler-icon {
+        width: 20px;
+    }
 .igotRegister .igot-title h2 {
     font-size: 1.6rem;
 }
